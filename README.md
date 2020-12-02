@@ -1,6 +1,6 @@
 # EE-Logical-Design-Project
 
-This is final project of logical design lecture.  
+This is final project of SNUEE logical design lecture (430.201A).  
  ## Infos
 - Objective : remort controller containing 4 mode
 - Program :  Xilinx Spartan 3 program  
