@@ -1,0 +1,33 @@
+
+
+NET "INP_0" LOC = H13;
+NET "INP_2" LOC = V4;
+NET "INP_1" LOC = D18;
+NET "INP_3" LOC = K17;
+
+NET "MCLK" LOC = C9;
+
+NET "SW_3" LOC = N17;
+NET "SW_2" LOC = L14;
+
+
+NET "LCD_DATA[11]" LOC = M15;
+NET "LCD_DATA[10]" LOC = P17;
+NET "LCD_DATA[9]" LOC = R16;
+NET "LCD_DATA[8]" LOC = R15;
+
+NET "Out_Thing[7]" LOC = F9;
+NET "Out_Thing[6]" LOC = E9;
+NET "Out_Thing[5]" LOC = D11;
+NET "Out_Thing[4]" LOC = C11;
+NET "Out_Thing[3]" LOC = F11;
+NET "Out_Thing[2]" LOC = E11;
+NET "Out_Thing[1]" LOC = E12;
+NET "Out_Thing[0]" LOC = F12;
+//NET "OPEN_DOOR" LOC = F12;
+
+NET "LCD_E" LOC = M18;
+NET "LCD_RS" LOC = L18;
+NET "LCD_RW" LOC = L17;
+
+

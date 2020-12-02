@@ -1,0 +1,3 @@
+MODULE mode1
+	SUBMODULE pulser
+		INSTANCE XLXI_738

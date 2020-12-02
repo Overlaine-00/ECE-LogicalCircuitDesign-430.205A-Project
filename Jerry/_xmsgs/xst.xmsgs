@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="2319" delta="new" >&quot;<arg fmt="%s" index="1">../Project_common/lcd.v</arg>&quot; line <arg fmt="%d" index="2">23</arg>: Signal <arg fmt="%s" index="3">count</arg> in initial block is partially initialized. The initialization will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">dummy</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">dummy</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">dummy</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_CO&lt;7:4&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">OT&lt;35:8&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">CT&lt;17:4&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXN_362&lt;7&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">init</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">lcd0</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">init</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">lcd</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">OutString_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">OUTPUT_LCD</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">OutString_106</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">OUTPUT_LCD</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">XLXI_190</arg> in unit <arg fmt="%s" index="2">mode1_MUSER_Top_Design_Thing</arg> of type <arg fmt="%s" index="3">MULT18X18</arg> has been replaced by <arg fmt="%s" index="4">MULT18X18SIO</arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">OutString_124</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">OUTPUT_LCD</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;OutString_227&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_49/cnt_2K_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top_Design_Thing</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_49/cnt_2K_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top_Design_Thing</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_49/cnt_2K_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top_Design_Thing</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_49/cnt_2K_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top_Design_Thing</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_49/cnt_2K_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top_Design_Thing</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_49/cnt_2K_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top_Design_Thing</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_49/cnt_2K_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top_Design_Thing</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_49/cnt_2K_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top_Design_Thing</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_49/cnt_2K_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top_Design_Thing</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_49/cnt_2K_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top_Design_Thing</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_49/cnt_2K_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top_Design_Thing</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_49/cnt_2K_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top_Design_Thing</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_49/clk_2K_temp</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top_Design_Thing</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_111/XLXI_272/I0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_111/XLXI_272/I1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_111/XLXI_272/I2</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_111/XLXI_272/I3</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_111/XLXI_272/I4</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_111/XLXI_272/I5</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_111/XLXI_272/I6</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_111/XLXI_272/I7</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

@@ -1,0 +1,1856 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: Top_Design_Thing.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Top_Design_Thing.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Top_Design_Thing"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : Top_Design_Thing
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/ECE/Desktop/Project_common/binbcd7.vhd" in Library work.
+Architecture behavioral of Entity binbcd7 is up to date.
+Compiling vhdl file "C:/Users/ECE/Desktop/Project_common/clk.vhd" in Library work.
+Architecture behavioral of Entity clock is up to date.
+Compiling vhdl file "C:/Users/ECE/Desktop/Project_common/pulser.vhd" in Library work.
+Architecture behavioral of Entity pulser is up to date.
+Compiling verilog file "../Project_common/lcd.v" in library work
+Compiling verilog file "../Project_common/OUTPUT_LOGIC.v" in library work
+Module <lcd> compiled
+Compiling verilog file "volume_control.vf" in library work
+Module <OUTPUT_LCD> compiled
+Compiling verilog file "password.vf" in library work
+Module <volume_control> compiled
+Module <COMP2_MXILINX_password> compiled
+Module <M2_1E_MXILINX_password> compiled
+Module <M4_1E_MXILINX_password> compiled
+Compiling verilog file "mute_control.vf" in library work
+Module <password> compiled
+Compiling verilog file "MODE_SELECT.vf" in library work
+Module <mute_control> compiled
+Module <M2_1B1_MXILINX_MODE_SELECT> compiled
+Module <M2_1_MXILINX_MODE_SELECT> compiled
+Module <FTCLEX_MXILINX_MODE_SELECT> compiled
+Module <CB2CLED_MXILINX_MODE_SELECT> compiled
+Compiling verilog file "MODE_3.vf" in library work
+Module <MODE_SELECT> compiled
+Module <M2_1B1_MXILINX_MODE_3> compiled
+Module <M2_1_MXILINX_MODE_3> compiled
+Module <FTCLEX_MXILINX_MODE_3> compiled
+Module <CB2CLED_MXILINX_MODE_3> compiled
+Compiling verilog file "mode1.vf" in library work
+Module <MODE_3> compiled
+Module <M2_1E_MXILINX_mode1> compiled
+Module <M4_1E_MXILINX_mode1> compiled
+Module <CD4CE_MXILINX_mode1> compiled
+Module <M2_1B1_MXILINX_mode1> compiled
+Module <M2_1_MXILINX_mode1> compiled
+Module <FTCLEX_MXILINX_mode1> compiled
+Module <CB8CLED_MXILINX_mode1> compiled
+Module <FJKC_MXILINX_mode1> compiled
+Module <NOR9_MXILINX_mode1> compiled
+Module <AND9_MXILINX_mode1> compiled
+Module <ADD8_MXILINX_mode1> compiled
+Compiling verilog file "button_control.vf" in library work
+Module <mode1> compiled
+Compiling verilog file "Top_Design_Thing.vf" in library work
+Module <button_control> compiled
+Module <M2_1E_MXILINX_Top_Design_Thing> compiled
+Module <M4_1E_MXILINX_Top_Design_Thing> compiled
+Module <CD4CE_MXILINX_Top_Design_Thing> compiled
+Module <M2_1B1_MXILINX_Top_Design_Thing> compiled
+Module <M2_1_MXILINX_Top_Design_Thing> compiled
+Module <FTCLEX_MXILINX_Top_Design_Thing> compiled
+Module <CB8CLED_MXILINX_Top_Design_Thing> compiled
+Module <FJKC_MXILINX_Top_Design_Thing> compiled
+Module <NOR9_MXILINX_Top_Design_Thing> compiled
+Module <AND9_MXILINX_Top_Design_Thing> compiled
+Module <ADD8_MXILINX_Top_Design_Thing> compiled
+Module <mode1_MUSER_Top_Design_Thing> compiled
+Module <CB2CLED_MXILINX_Top_Design_Thing> compiled
+Module <MODE_3_MUSER_Top_Design_Thing> compiled
+Module <COMP2_MXILINX_Top_Design_Thing> compiled
+Module <password_MUSER_Top_Design_Thing> compiled
+Module <D2_4E_MXILINX_Top_Design_Thing> compiled
+Module <mute_control_MUSER_Top_Design_Thing> compiled
+Module <MODE_SELECT_MUSER_Top_Design_Thing> compiled
+Module <volume_control_MUSER_Top_Design_Thing> compiled
+Module <button_control_MUSER_Top_Design_Thing> compiled
+Module <Top_Design_Thing> compiled
+No errors in compilation
+Analysis of file <"Top_Design_Thing.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for entity <clock> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for module <button_control_MUSER_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <volume_control_MUSER_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <MODE_SELECT_MUSER_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <OUTPUT_LCD> in library <work> with parameters.
+	BITS_PER_CHAR = "00000000000000000000000000001000"
+	CHARS_PER_LINE = "00000000000000000000000000010000"
+	ChannelString = "Current  Channel   Number  XX   "
+	Digit0 = "0"
+	Digit1 = "1"
+	Digit2 = "2"
+	Digit3 = "3"
+	Digit4 = "4"
+	Digit5 = "5"
+	Digit6 = "6"
+	Digit7 = "7"
+	Digit8 = "8"
+	Digit9 = "9"
+	EmptyString = "                                "
+	FavoriteString = "Favorite Channel   Number  XX   "
+	LINES = "00000000000000000000000000000010"
+	ModeString0 = " 1.Channel Mode    Select?      "
+	ModeString1 = " 2.Volume  Mode    Select?      "
+	ModeString2 = " 3.Favorite Mode   Select?      "
+	ModeString3 = " 4.Locked  Mode    Select?      "
+	MuteString = "  M U T E ! !   "
+	PasswordString0 = "   !!Locked!!      _ _ _ _      "
+	PasswordString1 = "   !!Locked!!      * _ _ _      "
+	PasswordString2 = "   !!Locked!!      * * _ _      "
+	PasswordString3 = "   !!Locked!!      * * * _      "
+	STR_SIZE = "00000000000000000000000100000000"
+	VolumeString = "  Channel : XX    Volume : X    "
+
+Analyzing hierarchy for module <password_MUSER_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <mute_control_MUSER_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <D2_4E_MXILINX_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <MODE_3_MUSER_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <mode1_MUSER_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for entity <binbcd7> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <pulser> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for module <CB2CLED_MXILINX_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <lcd> in library <work> with parameters.
+	j = "00000000000000000000000000010001"
+	k = "00000000000000000000000000001011"
+	n = "00000000000000000000000000011000"
+	noop = "010000"
+
+Analyzing hierarchy for module <M4_1E_MXILINX_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <COMP2_MXILINX_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <CB2CLED_MXILINX_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <ADD8_MXILINX_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <AND9_MXILINX_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <NOR9_MXILINX_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <FJKC_MXILINX_Top_Design_Thing> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <CB8CLED_MXILINX_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <CD4CE_MXILINX_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <CD4CE_MXILINX_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_Top_Design_Thing> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_Top_Design_Thing> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <M2_1_MXILINX_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <M2_1B1_MXILINX_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_Top_Design_Thing> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_Top_Design_Thing> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_Top_Design_Thing> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_Top_Design_Thing> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_Top_Design_Thing> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_Top_Design_Thing> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_Top_Design_Thing> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_Top_Design_Thing> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <M2_1_MXILINX_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <M2_1B1_MXILINX_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Top_Design_Thing> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Top_Design_Thing> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Top_Design_Thing>.
+Module <Top_Design_Thing> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_103_121" for instance <XLXI_103> in unit <Top_Design_Thing>.
+Analyzing Entity <clock> in library <work> (Architecture <behavioral>).
+Entity <clock> analyzed. Unit <clock> generated.
+
+Analyzing module <button_control_MUSER_Top_Design_Thing> in library <work>.
+Module <button_control_MUSER_Top_Design_Thing> is correct for synthesis.
+ 
+Analyzing Entity <pulser> in library <work> (Architecture <behavioral>).
+Entity <pulser> analyzed. Unit <pulser> generated.
+
+Analyzing module <volume_control_MUSER_Top_Design_Thing> in library <work>.
+Module <volume_control_MUSER_Top_Design_Thing> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  1" for instance <XLXI_204> in unit <volume_control_MUSER_Top_Design_Thing>.
+    Set user-defined property "INIT =  1" for instance <XLXI_206> in unit <volume_control_MUSER_Top_Design_Thing>.
+    Set user-defined property "INIT =  1" for instance <XLXI_207> in unit <volume_control_MUSER_Top_Design_Thing>.
+    Set user-defined property "INIT =  0" for instance <XLXI_208> in unit <volume_control_MUSER_Top_Design_Thing>.
+    Set user-defined property "INIT =  0" for instance <XLXI_209> in unit <volume_control_MUSER_Top_Design_Thing>.
+    Set user-defined property "INIT =  0" for instance <XLXI_210> in unit <volume_control_MUSER_Top_Design_Thing>.
+    Set user-defined property "INIT =  0" for instance <XLXI_211> in unit <volume_control_MUSER_Top_Design_Thing>.
+    Set user-defined property "INIT =  0" for instance <XLXI_212> in unit <volume_control_MUSER_Top_Design_Thing>.
+Analyzing module <MODE_SELECT_MUSER_Top_Design_Thing> in library <work>.
+Module <MODE_SELECT_MUSER_Top_Design_Thing> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <XLXI_22> in unit <MODE_SELECT_MUSER_Top_Design_Thing>.
+    Set user-defined property "HU_SET =  XLXI_1_120" for instance <XLXI_1> in unit <MODE_SELECT_MUSER_Top_Design_Thing>.
+Analyzing module <CB2CLED_MXILINX_Top_Design_Thing.1> in library <work>.
+Module <CB2CLED_MXILINX_Top_Design_Thing.1> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_Q0_113" for instance <I_Q0> in unit <CB2CLED_MXILINX_Top_Design_Thing.1>.
+    Set user-defined property "HU_SET =  I_Q1_112" for instance <I_Q1> in unit <CB2CLED_MXILINX_Top_Design_Thing.1>.
+    Set user-defined property "HU_SET =  I_T1_115" for instance <I_T1> in unit <CB2CLED_MXILINX_Top_Design_Thing.1>.
+    Set user-defined property "HU_SET =  I_TC_114" for instance <I_TC> in unit <CB2CLED_MXILINX_Top_Design_Thing.1>.
+Analyzing module <FTCLEX_MXILINX_Top_Design_Thing.1> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_Top_Design_Thing.1> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top_Design_Thing.1>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top_Design_Thing.1>.
+    Set user-defined property "HU_SET =  I_36_30_80" for instance <I_36_30> in unit <FTCLEX_MXILINX_Top_Design_Thing.1>.
+Analyzing module <M2_1_MXILINX_Top_Design_Thing.9> in library <work>.
+Module <M2_1_MXILINX_Top_Design_Thing.9> is correct for synthesis.
+ 
+Analyzing module <FTCLEX_MXILINX_Top_Design_Thing.2> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_Top_Design_Thing.2> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top_Design_Thing.2>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top_Design_Thing.2>.
+    Set user-defined property "HU_SET =  I_36_30_80" for instance <I_36_30> in unit <FTCLEX_MXILINX_Top_Design_Thing.2>.
+Analyzing module <M2_1_MXILINX_Top_Design_Thing.1> in library <work>.
+Module <M2_1_MXILINX_Top_Design_Thing.1> is correct for synthesis.
+ 
+Analyzing module <M2_1B1_MXILINX_Top_Design_Thing.1> in library <work>.
+Module <M2_1B1_MXILINX_Top_Design_Thing.1> is correct for synthesis.
+ 
+Analyzing module <OUTPUT_LCD> in library <work>.
+	BITS_PER_CHAR = 32'sb00000000000000000000000000001000
+	CHARS_PER_LINE = 32'sb00000000000000000000000000010000
+	ChannelString = "Current  Channel   Number  XX   "
+	Digit0 = "0"
+	Digit1 = "1"
+	Digit2 = "2"
+	Digit3 = "3"
+	Digit4 = "4"
+	Digit5 = "5"
+	Digit6 = "6"
+	Digit7 = "7"
+	Digit8 = "8"
+	Digit9 = "9"
+	EmptyString = "                                "
+	FavoriteString = "Favorite Channel   Number  XX   "
+	LINES = 32'sb00000000000000000000000000000010
+	ModeString0 = " 1.Channel Mode    Select?      "
+	ModeString1 = " 2.Volume  Mode    Select?      "
+	ModeString2 = " 3.Favorite Mode   Select?      "
+	ModeString3 = " 4.Locked  Mode    Select?      "
+	MuteString = "  M U T E ! !   "
+	PasswordString0 = "   !!Locked!!      _ _ _ _      "
+	PasswordString1 = "   !!Locked!!      * _ _ _      "
+	PasswordString2 = "   !!Locked!!      * * _ _      "
+	PasswordString3 = "   !!Locked!!      * * * _      "
+	STR_SIZE = 32'sb00000000000000000000000100000000
+	VolumeString = "  Channel : XX    Volume : X    "
+Module <OUTPUT_LCD> is correct for synthesis.
+ 
+Analyzing module <lcd> in library <work>.
+	j = 32'sb00000000000000000000000000010001
+	k = 32'sb00000000000000000000000000001011
+	n = 32'sb00000000000000000000000000011000
+	noop = 6'b010000
+WARNING:Xst:2319 - "../Project_common/lcd.v" line 23: Signal count in initial block is partially initialized. The initialization will be ignored.
+Module <lcd> is correct for synthesis.
+ 
+Analyzing module <password_MUSER_Top_Design_Thing> in library <work>.
+Module <password_MUSER_Top_Design_Thing> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <XLXI_23> in unit <password_MUSER_Top_Design_Thing>.
+    Set user-defined property "INIT =  0" for instance <XLXI_24> in unit <password_MUSER_Top_Design_Thing>.
+    Set user-defined property "INIT =  0" for instance <XLXI_40> in unit <password_MUSER_Top_Design_Thing>.
+    Set user-defined property "INIT =  0" for instance <XLXI_42> in unit <password_MUSER_Top_Design_Thing>.
+    Set user-defined property "HU_SET =  XLXI_13_119" for instance <XLXI_13> in unit <password_MUSER_Top_Design_Thing>.
+    Set user-defined property "HU_SET =  XLXI_4_118" for instance <XLXI_4> in unit <password_MUSER_Top_Design_Thing>.
+    Set user-defined property "HU_SET =  XLXI_5_117" for instance <XLXI_5> in unit <password_MUSER_Top_Design_Thing>.
+Analyzing module <M4_1E_MXILINX_Top_Design_Thing.1> in library <work>.
+Module <M4_1E_MXILINX_Top_Design_Thing.1> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_79" for instance <I_M01> in unit <M4_1E_MXILINX_Top_Design_Thing.1>.
+    Set user-defined property "HU_SET =  I_M23_78" for instance <I_M23> in unit <M4_1E_MXILINX_Top_Design_Thing.1>.
+Analyzing module <M2_1E_MXILINX_Top_Design_Thing.1> in library <work>.
+Module <M2_1E_MXILINX_Top_Design_Thing.1> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_Top_Design_Thing.2> in library <work>.
+Module <M2_1E_MXILINX_Top_Design_Thing.2> is correct for synthesis.
+ 
+Analyzing module <M4_1E_MXILINX_Top_Design_Thing.2> in library <work>.
+Module <M4_1E_MXILINX_Top_Design_Thing.2> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_79" for instance <I_M01> in unit <M4_1E_MXILINX_Top_Design_Thing.2>.
+    Set user-defined property "HU_SET =  I_M23_78" for instance <I_M23> in unit <M4_1E_MXILINX_Top_Design_Thing.2>.
+Analyzing module <COMP2_MXILINX_Top_Design_Thing> in library <work>.
+Module <COMP2_MXILINX_Top_Design_Thing> is correct for synthesis.
+ 
+Analyzing module <mute_control_MUSER_Top_Design_Thing> in library <work>.
+Module <mute_control_MUSER_Top_Design_Thing> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <XLXI_35> in unit <mute_control_MUSER_Top_Design_Thing>.
+Analyzing module <D2_4E_MXILINX_Top_Design_Thing> in library <work>.
+Module <D2_4E_MXILINX_Top_Design_Thing> is correct for synthesis.
+ 
+Analyzing module <MODE_3_MUSER_Top_Design_Thing> in library <work>.
+Module <MODE_3_MUSER_Top_Design_Thing> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <XLXI_26> in unit <MODE_3_MUSER_Top_Design_Thing>.
+    Set user-defined property "INIT =  0" for instance <XLXI_27> in unit <MODE_3_MUSER_Top_Design_Thing>.
+    Set user-defined property "INIT =  0" for instance <XLXI_31> in unit <MODE_3_MUSER_Top_Design_Thing>.
+    Set user-defined property "INIT =  0" for instance <XLXI_32> in unit <MODE_3_MUSER_Top_Design_Thing>.
+    Set user-defined property "HU_SET =  XLXI_7_116" for instance <XLXI_7> in unit <MODE_3_MUSER_Top_Design_Thing>.
+Analyzing module <CB2CLED_MXILINX_Top_Design_Thing.2> in library <work>.
+Module <CB2CLED_MXILINX_Top_Design_Thing.2> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_Q0_113" for instance <I_Q0> in unit <CB2CLED_MXILINX_Top_Design_Thing.2>.
+    Set user-defined property "HU_SET =  I_Q1_112" for instance <I_Q1> in unit <CB2CLED_MXILINX_Top_Design_Thing.2>.
+    Set user-defined property "HU_SET =  I_T1_115" for instance <I_T1> in unit <CB2CLED_MXILINX_Top_Design_Thing.2>.
+    Set user-defined property "HU_SET =  I_TC_114" for instance <I_TC> in unit <CB2CLED_MXILINX_Top_Design_Thing.2>.
+Analyzing module <mode1_MUSER_Top_Design_Thing> in library <work>.
+Module <mode1_MUSER_Top_Design_Thing> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_272_97" for instance <XLXI_272> in unit <mode1_MUSER_Top_Design_Thing>.
+    Set user-defined property "HU_SET =  XLXI_404_98" for instance <XLXI_404> in unit <mode1_MUSER_Top_Design_Thing>.
+    Set user-defined property "HU_SET =  XLXI_659_99" for instance <XLXI_659> in unit <mode1_MUSER_Top_Design_Thing>.
+    Set user-defined property "HU_SET =  XLXI_663_100" for instance <XLXI_663> in unit <mode1_MUSER_Top_Design_Thing>.
+    Set user-defined property "HU_SET =  XLXI_664_101" for instance <XLXI_664> in unit <mode1_MUSER_Top_Design_Thing>.
+    Set user-defined property "HU_SET =  XLXI_665_102" for instance <XLXI_665> in unit <mode1_MUSER_Top_Design_Thing>.
+    Set user-defined property "HU_SET =  XLXI_666_103" for instance <XLXI_666> in unit <mode1_MUSER_Top_Design_Thing>.
+    Set user-defined property "HU_SET =  XLXI_687_111" for instance <XLXI_687> in unit <mode1_MUSER_Top_Design_Thing>.
+    Set user-defined property "HU_SET =  XLXI_692_110" for instance <XLXI_692> in unit <mode1_MUSER_Top_Design_Thing>.
+    Set user-defined property "HU_SET =  XLXI_693_109" for instance <XLXI_693> in unit <mode1_MUSER_Top_Design_Thing>.
+    Set user-defined property "HU_SET =  XLXI_694_108" for instance <XLXI_694> in unit <mode1_MUSER_Top_Design_Thing>.
+    Set user-defined property "HU_SET =  XLXI_695_107" for instance <XLXI_695> in unit <mode1_MUSER_Top_Design_Thing>.
+    Set user-defined property "HU_SET =  XLXI_696_106" for instance <XLXI_696> in unit <mode1_MUSER_Top_Design_Thing>.
+    Set user-defined property "HU_SET =  XLXI_697_105" for instance <XLXI_697> in unit <mode1_MUSER_Top_Design_Thing>.
+    Set user-defined property "HU_SET =  XLXI_698_104" for instance <XLXI_698> in unit <mode1_MUSER_Top_Design_Thing>.
+Analyzing module <ADD8_MXILINX_Top_Design_Thing> in library <work>.
+Module <ADD8_MXILINX_Top_Design_Thing> is correct for synthesis.
+ 
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_16> in unit <ADD8_MXILINX_Top_Design_Thing>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_17> in unit <ADD8_MXILINX_Top_Design_Thing>.
+    Set user-defined property "RLOC =  X0Y1" for instance <I_36_18> in unit <ADD8_MXILINX_Top_Design_Thing>.
+    Set user-defined property "RLOC =  X0Y1" for instance <I_36_19> in unit <ADD8_MXILINX_Top_Design_Thing>.
+    Set user-defined property "RLOC =  X0Y2" for instance <I_36_20> in unit <ADD8_MXILINX_Top_Design_Thing>.
+    Set user-defined property "RLOC =  X0Y2" for instance <I_36_21> in unit <ADD8_MXILINX_Top_Design_Thing>.
+    Set user-defined property "RLOC =  X0Y3" for instance <I_36_22> in unit <ADD8_MXILINX_Top_Design_Thing>.
+    Set user-defined property "RLOC =  X0Y3" for instance <I_36_23> in unit <ADD8_MXILINX_Top_Design_Thing>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_55> in unit <ADD8_MXILINX_Top_Design_Thing>.
+    Set user-defined property "RLOC =  X0Y1" for instance <I_36_58> in unit <ADD8_MXILINX_Top_Design_Thing>.
+    Set user-defined property "RLOC =  X0Y1" for instance <I_36_62> in unit <ADD8_MXILINX_Top_Design_Thing>.
+    Set user-defined property "RLOC =  X0Y2" for instance <I_36_63> in unit <ADD8_MXILINX_Top_Design_Thing>.
+    Set user-defined property "RLOC =  X0Y3" for instance <I_36_64> in unit <ADD8_MXILINX_Top_Design_Thing>.
+    Set user-defined property "RLOC =  X0Y3" for instance <I_36_107> in unit <ADD8_MXILINX_Top_Design_Thing>.
+    Set user-defined property "RLOC =  X0Y2" for instance <I_36_110> in unit <ADD8_MXILINX_Top_Design_Thing>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_111> in unit <ADD8_MXILINX_Top_Design_Thing>.
+Analyzing module <AND9_MXILINX_Top_Design_Thing> in library <work>.
+Module <AND9_MXILINX_Top_Design_Thing> is correct for synthesis.
+ 
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_29> in unit <AND9_MXILINX_Top_Design_Thing>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_138> in unit <AND9_MXILINX_Top_Design_Thing>.
+    Set user-defined property "RLOC =  X0Y1" for instance <I_36_142> in unit <AND9_MXILINX_Top_Design_Thing>.
+Analyzing module <NOR9_MXILINX_Top_Design_Thing> in library <work>.
+Module <NOR9_MXILINX_Top_Design_Thing> is correct for synthesis.
+ 
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_29> in unit <NOR9_MXILINX_Top_Design_Thing>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_138> in unit <NOR9_MXILINX_Top_Design_Thing>.
+    Set user-defined property "RLOC =  X0Y1" for instance <I_36_142> in unit <NOR9_MXILINX_Top_Design_Thing>.
+Analyzing module <FJKC_MXILINX_Top_Design_Thing> in library <work>.
+	INIT = 1'b0
+Module <FJKC_MXILINX_Top_Design_Thing> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_32> in unit <FJKC_MXILINX_Top_Design_Thing>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_32> in unit <FJKC_MXILINX_Top_Design_Thing>.
+Analyzing module <CB8CLED_MXILINX_Top_Design_Thing> in library <work>.
+Module <CB8CLED_MXILINX_Top_Design_Thing> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_Q0_88" for instance <I_Q0> in unit <CB8CLED_MXILINX_Top_Design_Thing>.
+    Set user-defined property "HU_SET =  I_Q1_87" for instance <I_Q1> in unit <CB8CLED_MXILINX_Top_Design_Thing>.
+    Set user-defined property "HU_SET =  I_Q2_86" for instance <I_Q2> in unit <CB8CLED_MXILINX_Top_Design_Thing>.
+    Set user-defined property "HU_SET =  I_Q3_85" for instance <I_Q3> in unit <CB8CLED_MXILINX_Top_Design_Thing>.
+    Set user-defined property "HU_SET =  I_Q4_84" for instance <I_Q4> in unit <CB8CLED_MXILINX_Top_Design_Thing>.
+    Set user-defined property "HU_SET =  I_Q5_83" for instance <I_Q5> in unit <CB8CLED_MXILINX_Top_Design_Thing>.
+    Set user-defined property "HU_SET =  I_Q6_82" for instance <I_Q6> in unit <CB8CLED_MXILINX_Top_Design_Thing>.
+    Set user-defined property "HU_SET =  I_Q7_81" for instance <I_Q7> in unit <CB8CLED_MXILINX_Top_Design_Thing>.
+    Set user-defined property "HU_SET =  I_T1_96" for instance <I_T1> in unit <CB8CLED_MXILINX_Top_Design_Thing>.
+    Set user-defined property "HU_SET =  I_T2_89" for instance <I_T2> in unit <CB8CLED_MXILINX_Top_Design_Thing>.
+    Set user-defined property "HU_SET =  I_T3_90" for instance <I_T3> in unit <CB8CLED_MXILINX_Top_Design_Thing>.
+    Set user-defined property "HU_SET =  I_T4_95" for instance <I_T4> in unit <CB8CLED_MXILINX_Top_Design_Thing>.
+    Set user-defined property "HU_SET =  I_T5_94" for instance <I_T5> in unit <CB8CLED_MXILINX_Top_Design_Thing>.
+    Set user-defined property "HU_SET =  I_T6_91" for instance <I_T6> in unit <CB8CLED_MXILINX_Top_Design_Thing>.
+    Set user-defined property "HU_SET =  I_T7_92" for instance <I_T7> in unit <CB8CLED_MXILINX_Top_Design_Thing>.
+    Set user-defined property "HU_SET =  I_TC_93" for instance <I_TC> in unit <CB8CLED_MXILINX_Top_Design_Thing>.
+Analyzing module <FTCLEX_MXILINX_Top_Design_Thing.3> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_Top_Design_Thing.3> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top_Design_Thing.3>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top_Design_Thing.3>.
+    Set user-defined property "HU_SET =  I_36_30_80" for instance <I_36_30> in unit <FTCLEX_MXILINX_Top_Design_Thing.3>.
+Analyzing module <FTCLEX_MXILINX_Top_Design_Thing.4> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_Top_Design_Thing.4> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top_Design_Thing.4>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top_Design_Thing.4>.
+    Set user-defined property "HU_SET =  I_36_30_80" for instance <I_36_30> in unit <FTCLEX_MXILINX_Top_Design_Thing.4>.
+Analyzing module <FTCLEX_MXILINX_Top_Design_Thing.5> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_Top_Design_Thing.5> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top_Design_Thing.5>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top_Design_Thing.5>.
+    Set user-defined property "HU_SET =  I_36_30_80" for instance <I_36_30> in unit <FTCLEX_MXILINX_Top_Design_Thing.5>.
+Analyzing module <FTCLEX_MXILINX_Top_Design_Thing.6> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_Top_Design_Thing.6> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top_Design_Thing.6>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top_Design_Thing.6>.
+    Set user-defined property "HU_SET =  I_36_30_80" for instance <I_36_30> in unit <FTCLEX_MXILINX_Top_Design_Thing.6>.
+Analyzing module <FTCLEX_MXILINX_Top_Design_Thing.7> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_Top_Design_Thing.7> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top_Design_Thing.7>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top_Design_Thing.7>.
+    Set user-defined property "HU_SET =  I_36_30_80" for instance <I_36_30> in unit <FTCLEX_MXILINX_Top_Design_Thing.7>.
+Analyzing module <FTCLEX_MXILINX_Top_Design_Thing.8> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_Top_Design_Thing.8> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top_Design_Thing.8>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top_Design_Thing.8>.
+    Set user-defined property "HU_SET =  I_36_30_80" for instance <I_36_30> in unit <FTCLEX_MXILINX_Top_Design_Thing.8>.
+Analyzing module <FTCLEX_MXILINX_Top_Design_Thing.9> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_Top_Design_Thing.9> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top_Design_Thing.9>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top_Design_Thing.9>.
+    Set user-defined property "HU_SET =  I_36_30_80" for instance <I_36_30> in unit <FTCLEX_MXILINX_Top_Design_Thing.9>.
+Analyzing module <FTCLEX_MXILINX_Top_Design_Thing.10> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_Top_Design_Thing.10> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top_Design_Thing.10>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top_Design_Thing.10>.
+    Set user-defined property "HU_SET =  I_36_30_80" for instance <I_36_30> in unit <FTCLEX_MXILINX_Top_Design_Thing.10>.
+Analyzing module <M2_1_MXILINX_Top_Design_Thing.2> in library <work>.
+Module <M2_1_MXILINX_Top_Design_Thing.2> is correct for synthesis.
+ 
+Analyzing module <M2_1B1_MXILINX_Top_Design_Thing.2> in library <work>.
+Module <M2_1B1_MXILINX_Top_Design_Thing.2> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Top_Design_Thing.3> in library <work>.
+Module <M2_1_MXILINX_Top_Design_Thing.3> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Top_Design_Thing.4> in library <work>.
+Module <M2_1_MXILINX_Top_Design_Thing.4> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Top_Design_Thing.5> in library <work>.
+Module <M2_1_MXILINX_Top_Design_Thing.5> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Top_Design_Thing.6> in library <work>.
+Module <M2_1_MXILINX_Top_Design_Thing.6> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Top_Design_Thing.7> in library <work>.
+Module <M2_1_MXILINX_Top_Design_Thing.7> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Top_Design_Thing.8> in library <work>.
+Module <M2_1_MXILINX_Top_Design_Thing.8> is correct for synthesis.
+ 
+Analyzing module <CD4CE_MXILINX_Top_Design_Thing.1> in library <work>.
+Module <CD4CE_MXILINX_Top_Design_Thing.1> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <CD4CE_MXILINX_Top_Design_Thing.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <CD4CE_MXILINX_Top_Design_Thing.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <CD4CE_MXILINX_Top_Design_Thing.1>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <CD4CE_MXILINX_Top_Design_Thing.1>.
+Analyzing module <CD4CE_MXILINX_Top_Design_Thing.2> in library <work>.
+Module <CD4CE_MXILINX_Top_Design_Thing.2> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <CD4CE_MXILINX_Top_Design_Thing.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <CD4CE_MXILINX_Top_Design_Thing.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <CD4CE_MXILINX_Top_Design_Thing.2>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <CD4CE_MXILINX_Top_Design_Thing.2>.
+Analyzing module <M4_1E_MXILINX_Top_Design_Thing.3> in library <work>.
+Module <M4_1E_MXILINX_Top_Design_Thing.3> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_79" for instance <I_M01> in unit <M4_1E_MXILINX_Top_Design_Thing.3>.
+    Set user-defined property "HU_SET =  I_M23_78" for instance <I_M23> in unit <M4_1E_MXILINX_Top_Design_Thing.3>.
+Analyzing module <M4_1E_MXILINX_Top_Design_Thing.4> in library <work>.
+Module <M4_1E_MXILINX_Top_Design_Thing.4> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_79" for instance <I_M01> in unit <M4_1E_MXILINX_Top_Design_Thing.4>.
+    Set user-defined property "HU_SET =  I_M23_78" for instance <I_M23> in unit <M4_1E_MXILINX_Top_Design_Thing.4>.
+Analyzing module <M4_1E_MXILINX_Top_Design_Thing.5> in library <work>.
+Module <M4_1E_MXILINX_Top_Design_Thing.5> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_79" for instance <I_M01> in unit <M4_1E_MXILINX_Top_Design_Thing.5>.
+    Set user-defined property "HU_SET =  I_M23_78" for instance <I_M23> in unit <M4_1E_MXILINX_Top_Design_Thing.5>.
+Analyzing module <M4_1E_MXILINX_Top_Design_Thing.6> in library <work>.
+Module <M4_1E_MXILINX_Top_Design_Thing.6> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_79" for instance <I_M01> in unit <M4_1E_MXILINX_Top_Design_Thing.6>.
+    Set user-defined property "HU_SET =  I_M23_78" for instance <I_M23> in unit <M4_1E_MXILINX_Top_Design_Thing.6>.
+Analyzing module <M4_1E_MXILINX_Top_Design_Thing.7> in library <work>.
+Module <M4_1E_MXILINX_Top_Design_Thing.7> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_79" for instance <I_M01> in unit <M4_1E_MXILINX_Top_Design_Thing.7>.
+    Set user-defined property "HU_SET =  I_M23_78" for instance <I_M23> in unit <M4_1E_MXILINX_Top_Design_Thing.7>.
+Analyzing module <M4_1E_MXILINX_Top_Design_Thing.8> in library <work>.
+Module <M4_1E_MXILINX_Top_Design_Thing.8> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_79" for instance <I_M01> in unit <M4_1E_MXILINX_Top_Design_Thing.8>.
+    Set user-defined property "HU_SET =  I_M23_78" for instance <I_M23> in unit <M4_1E_MXILINX_Top_Design_Thing.8>.
+Analyzing module <M4_1E_MXILINX_Top_Design_Thing.9> in library <work>.
+Module <M4_1E_MXILINX_Top_Design_Thing.9> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_79" for instance <I_M01> in unit <M4_1E_MXILINX_Top_Design_Thing.9>.
+    Set user-defined property "HU_SET =  I_M23_78" for instance <I_M23> in unit <M4_1E_MXILINX_Top_Design_Thing.9>.
+Analyzing module <M4_1E_MXILINX_Top_Design_Thing.10> in library <work>.
+Module <M4_1E_MXILINX_Top_Design_Thing.10> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_79" for instance <I_M01> in unit <M4_1E_MXILINX_Top_Design_Thing.10>.
+    Set user-defined property "HU_SET =  I_M23_78" for instance <I_M23> in unit <M4_1E_MXILINX_Top_Design_Thing.10>.
+Analyzing Entity <binbcd7> in library <work> (Architecture <behavioral>).
+Entity <binbcd7> analyzed. Unit <binbcd7> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <clock>.
+    Related source file is "C:/Users/ECE/Desktop/Project_common/clk.vhd".
+    Found 1-bit register for signal <clk_100_temp>.
+    Found 1-bit register for signal <clk_100k>.
+    Found 1-bit register for signal <clk_2K_temp>.
+    Found 12-bit up counter for signal <cnt_100>.
+    Found 12-bit up counter for signal <cnt_100k>.
+    Found 12-bit up counter for signal <cnt_2K>.
+    Summary:
+	inferred   3 Counter(s).
+	inferred   3 D-type flip-flop(s).
+Unit <clock> synthesized.
+
+
+Synthesizing Unit <binbcd7>.
+    Related source file is "C:/Users/ECE/Desktop/Project_common/binbcd7.vhd".
+    Found 4-bit adder for signal <z_10_7$add0000> created at line 23.
+    Found 4-bit adder for signal <z_10_7$add0001> created at line 23.
+    Found 4-bit adder for signal <z_10_7$add0002> created at line 23.
+    Found 4-bit adder for signal <z_10_7$add0003> created at line 23.
+    Found 5-bit comparator greater for signal <z_13$cmp_gt0000> created at line 25.
+    Found 4-bit adder for signal <z_14_11$add0000> created at line 26.
+    Found 5-bit comparator greater for signal <z_7$cmp_gt0000> created at line 22.
+    Found 5-bit comparator greater for signal <z_7$cmp_gt0001> created at line 22.
+    Found 5-bit comparator greater for signal <z_7$cmp_gt0002> created at line 22.
+    Found 5-bit comparator greater for signal <z_7$cmp_gt0003> created at line 22.
+    Summary:
+	inferred   5 Adder/Subtractor(s).
+	inferred   5 Comparator(s).
+Unit <binbcd7> synthesized.
+
+
+Synthesizing Unit <pulser>.
+    Related source file is "C:/Users/ECE/Desktop/Project_common/pulser.vhd".
+    Found 1-bit register for signal <Q>.
+    Found 1-bit register for signal <Q0>.
+    Found 1-bit register for signal <Q1>.
+    Found 1-bit register for signal <Q2>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <pulser> synthesized.
+
+
+Synthesizing Unit <lcd>.
+    Related source file is "../Project_common/lcd.v".
+    Found 4-bit register for signal <lcd_d>.
+    Found 1-bit register for signal <lcd_e>.
+    Found 1-bit register for signal <lcd_rs>.
+    Found 1-bit register for signal <lcd_rw>.
+    Found 25-bit up counter for signal <count>.
+    Found 1-bit register for signal <init>.
+    Found 1-bit xor2 for signal <lcd_e$xor0000> created at line 41.
+    Found 1-bit xor2 for signal <lcd_e$xor0001> created at line 50.
+    Found 6-bit register for signal <lcd_state>.
+    Found 1-bit register for signal <row>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  15 D-type flip-flop(s).
+Unit <lcd> synthesized.
+
+
+Synthesizing Unit <button_control_MUSER_Top_Design_Thing>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <button_control_MUSER_Top_Design_Thing> synthesized.
+
+
+Synthesizing Unit <volume_control_MUSER_Top_Design_Thing>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <volume_control_MUSER_Top_Design_Thing> synthesized.
+
+
+Synthesizing Unit <OUTPUT_LCD>.
+    Related source file is "../Project_common/OUTPUT_LOGIC.v".
+    Register <OutString<104>> equivalent to <OutString<0>> has been removed
+    Register <OutString<112>> equivalent to <OutString<0>> has been removed
+    Register <OutString<115>> equivalent to <OutString<0>> has been removed
+    Register <OutString<116>> equivalent to <OutString<0>> has been removed
+    Register <OutString<118>> equivalent to <OutString<0>> has been removed
+    Register <OutString<120>> equivalent to <OutString<0>> has been removed
+    Register <OutString<123>> equivalent to <OutString<0>> has been removed
+    Register <OutString<126>> equivalent to <OutString<0>> has been removed
+    Register <OutString<128>> equivalent to <OutString<0>> has been removed
+    Register <OutString<129>> equivalent to <OutString<0>> has been removed
+    Register <OutString<12>> equivalent to <OutString<0>> has been removed
+    Register <OutString<131>> equivalent to <OutString<0>> has been removed
+    Register <OutString<132>> equivalent to <OutString<0>> has been removed
+    Register <OutString<133>> equivalent to <OutString<0>> has been removed
+    Register <OutString<134>> equivalent to <OutString<0>> has been removed
+    Register <OutString<135>> equivalent to <OutString<0>> has been removed
+    Register <OutString<136>> equivalent to <OutString<0>> has been removed
+    Register <OutString<137>> equivalent to <OutString<0>> has been removed
+    Register <OutString<139>> equivalent to <OutString<0>> has been removed
+    Register <OutString<140>> equivalent to <OutString<0>> has been removed
+    Register <OutString<141>> equivalent to <OutString<0>> has been removed
+    Register <OutString<142>> equivalent to <OutString<0>> has been removed
+    Register <OutString<143>> equivalent to <OutString<0>> has been removed
+    Register <OutString<144>> equivalent to <OutString<0>> has been removed
+    Register <OutString<152>> equivalent to <OutString<0>> has been removed
+    Register <OutString<160>> equivalent to <OutString<0>> has been removed
+    Register <OutString<166>> equivalent to <OutString<0>> has been removed
+    Register <OutString<168>> equivalent to <OutString<0>> has been removed
+    Register <OutString<16>> equivalent to <OutString<0>> has been removed
+    Register <OutString<176>> equivalent to <OutString<0>> has been removed
+    Register <OutString<184>> equivalent to <OutString<0>> has been removed
+    Register <OutString<192>> equivalent to <OutString<0>> has been removed
+    Register <OutString<196>> equivalent to <OutString<0>> has been removed
+    Register <OutString<200>> equivalent to <OutString<0>> has been removed
+    Register <OutString<208>> equivalent to <OutString<0>> has been removed
+    Register <OutString<209>> equivalent to <OutString<0>> has been removed
+    Register <OutString<211>> equivalent to <OutString<0>> has been removed
+    Register <OutString<212>> equivalent to <OutString<0>> has been removed
+    Register <OutString<213>> equivalent to <OutString<0>> has been removed
+    Register <OutString<214>> equivalent to <OutString<0>> has been removed
+    Register <OutString<216>> equivalent to <OutString<0>> has been removed
+    Register <OutString<217>> equivalent to <OutString<0>> has been removed
+    Register <OutString<224>> equivalent to <OutString<0>> has been removed
+    Register <OutString<225>> equivalent to <OutString<0>> has been removed
+    Register <OutString<232>> equivalent to <OutString<0>> has been removed
+    Register <OutString<233>> equivalent to <OutString<0>> has been removed
+    Register <OutString<235>> equivalent to <OutString<0>> has been removed
+    Register <OutString<236>> equivalent to <OutString<0>> has been removed
+    Register <OutString<237>> equivalent to <OutString<0>> has been removed
+    Register <OutString<238>> equivalent to <OutString<0>> has been removed
+    Register <OutString<239>> equivalent to <OutString<0>> has been removed
+    Register <OutString<240>> equivalent to <OutString<0>> has been removed
+    Register <OutString<241>> equivalent to <OutString<0>> has been removed
+    Register <OutString<243>> equivalent to <OutString<0>> has been removed
+    Register <OutString<244>> equivalent to <OutString<0>> has been removed
+    Register <OutString<245>> equivalent to <OutString<0>> has been removed
+    Register <OutString<246>> equivalent to <OutString<0>> has been removed
+    Register <OutString<247>> equivalent to <OutString<0>> has been removed
+    Register <OutString<248>> equivalent to <OutString<0>> has been removed
+    Register <OutString<249>> equivalent to <OutString<0>> has been removed
+    Register <OutString<24>> equivalent to <OutString<0>> has been removed
+    Register <OutString<251>> equivalent to <OutString<0>> has been removed
+    Register <OutString<252>> equivalent to <OutString<0>> has been removed
+    Register <OutString<253>> equivalent to <OutString<0>> has been removed
+    Register <OutString<254>> equivalent to <OutString<0>> has been removed
+    Register <OutString<255>> equivalent to <OutString<0>> has been removed
+    Register <OutString<32>> equivalent to <OutString<0>> has been removed
+    Register <OutString<3>> equivalent to <OutString<0>> has been removed
+    Register <OutString<40>> equivalent to <OutString<0>> has been removed
+    Register <OutString<48>> equivalent to <OutString<0>> has been removed
+    Register <OutString<4>> equivalent to <OutString<0>> has been removed
+    Register <OutString<56>> equivalent to <OutString<0>> has been removed
+    Register <OutString<64>> equivalent to <OutString<0>> has been removed
+    Register <OutString<67>> equivalent to <OutString<0>> has been removed
+    Register <OutString<72>> equivalent to <OutString<0>> has been removed
+    Register <OutString<80>> equivalent to <OutString<0>> has been removed
+    Register <OutString<88>> equivalent to <OutString<0>> has been removed
+    Register <OutString<8>> equivalent to <OutString<0>> has been removed
+    Register <OutString<91>> equivalent to <OutString<0>> has been removed
+    Register <OutString<94>> equivalent to <OutString<0>> has been removed
+    Register <OutString<96>> equivalent to <OutString<0>> has been removed
+    Register <OutString<113>> equivalent to <OutString<105>> has been removed
+    Register <OutString<117>> equivalent to <OutString<105>> has been removed
+    Register <OutString<195>> equivalent to <OutString<105>> has been removed
+    Register <OutString<97>> equivalent to <OutString<105>> has been removed
+    Register <OutString<10>> equivalent to <OutString<106>> has been removed
+    Register <OutString<114>> equivalent to <OutString<106>> has been removed
+    Register <OutString<122>> equivalent to <OutString<106>> has been removed
+    Register <OutString<130>> equivalent to <OutString<106>> has been removed
+    Register <OutString<138>> equivalent to <OutString<106>> has been removed
+    Register <OutString<210>> equivalent to <OutString<106>> has been removed
+    Register <OutString<218>> equivalent to <OutString<106>> has been removed
+    Register <OutString<226>> equivalent to <OutString<106>> has been removed
+    Register <OutString<234>> equivalent to <OutString<106>> has been removed
+    Register <OutString<242>> equivalent to <OutString<106>> has been removed
+    Register <OutString<250>> equivalent to <OutString<106>> has been removed
+    Register <OutString<34>> equivalent to <OutString<106>> has been removed
+    Register <OutString<50>> equivalent to <OutString<106>> has been removed
+    Register <OutString<58>> equivalent to <OutString<106>> has been removed
+    Register <OutString<66>> equivalent to <OutString<106>> has been removed
+    Register <OutString<82>> equivalent to <OutString<106>> has been removed
+    Register <OutString<145>> equivalent to <OutString<107>> has been removed
+    Register <OutString<149>> equivalent to <OutString<107>> has been removed
+    Register <OutString<23>> equivalent to <OutString<107>> has been removed
+    Register <OutString<83>> equivalent to <OutString<107>> has been removed
+    Register <OutString<86>> equivalent to <OutString<107>> has been removed
+    Register <OutString<99>> equivalent to <OutString<107>> has been removed
+    Register <OutString<89>> equivalent to <OutString<119>> has been removed
+    Register <OutString<125>> equivalent to <OutString<121>> has been removed
+    Register <OutString<182>> equivalent to <OutString<124>> has been removed
+    Register <OutString<198>> equivalent to <OutString<124>> has been removed
+    Register <OutString<19>> equivalent to <OutString<124>> has been removed
+    Register <OutString<1>> equivalent to <OutString<124>> has been removed
+    Register <OutString<6>> equivalent to <OutString<124>> has been removed
+    Register <OutString<78>> equivalent to <OutString<124>> has been removed
+    Register <OutString<9>> equivalent to <OutString<124>> has been removed
+    Register <OutString<43>> equivalent to <OutString<127>> has been removed
+    Register <OutString<59>> equivalent to <OutString<127>> has been removed
+    Register <OutString<75>> equivalent to <OutString<127>> has been removed
+    Register <OutString<87>> equivalent to <OutString<127>> has been removed
+    Register <OutString<18>> equivalent to <OutString<146>> has been removed
+    Register <OutString<150>> equivalent to <OutString<147>> has been removed
+    Register <OutString<164>> equivalent to <OutString<147>> has been removed
+    Register <OutString<180>> equivalent to <OutString<147>> has been removed
+    Register <OutString<151>> equivalent to <OutString<148>> has been removed
+    Register <OutString<179>> equivalent to <OutString<148>> has been removed
+    Register <OutString<199>> equivalent to <OutString<148>> has been removed
+    Register <OutString<215>> equivalent to <OutString<148>> has been removed
+    Register <OutString<165>> equivalent to <OutString<161>> has been removed
+    Register <OutString<177>> equivalent to <OutString<161>> has been removed
+    Register <OutString<22>> equivalent to <OutString<161>> has been removed
+    Register <OutString<25>> equivalent to <OutString<161>> has been removed
+    Register <OutString<33>> equivalent to <OutString<161>> has been removed
+    Register <OutString<178>> equivalent to <OutString<162>> has been removed
+    Register <OutString<194>> equivalent to <OutString<162>> has been removed
+    Register <OutString<193>> equivalent to <OutString<167>> has been removed
+    Register <OutString<173>> equivalent to <OutString<169>> has been removed
+    Register <OutString<188>> equivalent to <OutString<174>> has been removed
+    Register <OutString<201>> equivalent to <OutString<174>> has been removed
+    Register <OutString<70>> equivalent to <OutString<174>> has been removed
+    Register <OutString<84>> equivalent to <OutString<17>> has been removed
+    Register <OutString<191>> equivalent to <OutString<185>> has been removed
+    Register <OutString<205>> equivalent to <OutString<190>> has been removed
+    Register <OutString<207>> equivalent to <OutString<190>> has been removed
+    Register <OutString<42>> equivalent to <OutString<202>> has been removed
+    Register <OutString<204>> equivalent to <OutString<203>> has been removed
+    Register <OutString<206>> equivalent to <OutString<203>> has been removed
+    Register <OutString<74>> equivalent to <OutString<2>> has been removed
+    Register <OutString<5>> equivalent to <OutString<35>> has been removed
+    Register <OutString<92>> equivalent to <OutString<36>> has been removed
+    Register <OutString<93>> equivalent to <OutString<36>> has been removed
+    Register <OutString<49>> equivalent to <OutString<41>> has been removed
+    Register <OutString<54>> equivalent to <OutString<52>> has been removed
+    Register <OutString<77>> equivalent to <OutString<62>> has been removed
+    Found 8x58-bit ROM for signal <MODE$rom0000>.
+    Found 8-bit 32-to-1 multiplexer for signal <char_mem_bus>.
+    Found 1-bit register for signal <OutString<0>>.
+    Found 1-bit register for signal <OutString<2>>.
+    Found 1-bit register for signal <OutString<7>>.
+    Found 1-bit register for signal <OutString<11>>.
+    Found 3-bit register for signal <OutString<13:15>>.
+    Found 1-bit register for signal <OutString<17>>.
+    Found 2-bit register for signal <OutString<20:21>>.
+    Found 6-bit register for signal <OutString<26:31>>.
+    Found 5-bit register for signal <OutString<35:39>>.
+    Found 1-bit register for signal <OutString<41>>.
+    Found 4-bit register for signal <OutString<44:47>>.
+    Found 3-bit register for signal <OutString<51:53>>.
+    Found 1-bit register for signal <OutString<55>>.
+    Found 1-bit register for signal <OutString<57>>.
+    Found 4-bit register for signal <OutString<60:63>>.
+    Found 1-bit register for signal <OutString<65>>.
+    Found 2-bit register for signal <OutString<68:69>>.
+    Found 1-bit register for signal <OutString<71>>.
+    Found 1-bit register for signal <OutString<73>>.
+    Found 1-bit register for signal <OutString<76>>.
+    Found 1-bit register for signal <OutString<79>>.
+    Found 1-bit register for signal <OutString<81>>.
+    Found 1-bit register for signal <OutString<85>>.
+    Found 1-bit register for signal <OutString<90>>.
+    Found 1-bit register for signal <OutString<95>>.
+    Found 1-bit register for signal <OutString<98>>.
+    Found 4-bit register for signal <OutString<100:103>>.
+    Found 7-bit register for signal <OutString<105:111>>.
+    Found 1-bit register for signal <OutString<119>>.
+    Found 1-bit register for signal <OutString<121>>.
+    Found 1-bit register for signal <OutString<124>>.
+    Found 1-bit register for signal <OutString<127>>.
+    Found 3-bit register for signal <OutString<146:148>>.
+    Found 7-bit register for signal <OutString<153:159>>.
+    Found 3-bit register for signal <OutString<161:163>>.
+    Found 1-bit register for signal <OutString<167>>.
+    Found 4-bit register for signal <OutString<169:172>>.
+    Found 2-bit register for signal <OutString<174:175>>.
+    Found 1-bit register for signal <OutString<181>>.
+    Found 1-bit register for signal <OutString<183>>.
+    Found 3-bit register for signal <OutString<185:187>>.
+    Found 2-bit register for signal <OutString<189:190>>.
+    Found 1-bit register for signal <OutString<197>>.
+    Found 2-bit register for signal <OutString<202:203>>.
+    Found 5-bit register for signal <OutString<219:223>>.
+    Found 5-bit register for signal <OutString<227:231>>.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_100$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_101$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_102$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_103$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_108$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_109$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_110$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_111$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_147$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_148$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_153$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_154$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_155$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_156$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_157$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_158$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_159$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_163$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_167$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_169$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_170$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_171$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_175$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_183$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_185$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_186$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_187$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_189$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_197$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_203$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_219$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_220$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_221$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_222$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_223$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_228$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_229$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_230$mux0000> created at line 84.
+    Found 1-bit 8-to-1 multiplexer for signal <OutString_231$mux0000> created at line 84.
+    Summary:
+	inferred   1 ROM(s).
+	inferred 102 D-type flip-flop(s).
+	inferred  47 Multiplexer(s).
+Unit <OUTPUT_LCD> synthesized.
+
+
+Synthesizing Unit <mute_control_MUSER_Top_Design_Thing>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <mute_control_MUSER_Top_Design_Thing> synthesized.
+
+
+Synthesizing Unit <D2_4E_MXILINX_Top_Design_Thing>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <D2_4E_MXILINX_Top_Design_Thing> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Top_Design_Thing_1>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <M2_1_MXILINX_Top_Design_Thing_1> synthesized.
+
+
+Synthesizing Unit <M2_1B1_MXILINX_Top_Design_Thing_1>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <M2_1B1_MXILINX_Top_Design_Thing_1> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Top_Design_Thing_9>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <M2_1_MXILINX_Top_Design_Thing_9> synthesized.
+
+
+Synthesizing Unit <COMP2_MXILINX_Top_Design_Thing>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <COMP2_MXILINX_Top_Design_Thing> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_Top_Design_Thing_1>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <M2_1E_MXILINX_Top_Design_Thing_1> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_Top_Design_Thing_2>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <M2_1E_MXILINX_Top_Design_Thing_2> synthesized.
+
+
+Synthesizing Unit <ADD8_MXILINX_Top_Design_Thing>.
+    Related source file is "Top_Design_Thing.vf".
+WARNING:Xst:653 - Signal <dummy> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <ADD8_MXILINX_Top_Design_Thing> synthesized.
+
+
+Synthesizing Unit <AND9_MXILINX_Top_Design_Thing>.
+    Related source file is "Top_Design_Thing.vf".
+WARNING:Xst:653 - Signal <dummy> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <AND9_MXILINX_Top_Design_Thing> synthesized.
+
+
+Synthesizing Unit <NOR9_MXILINX_Top_Design_Thing>.
+    Related source file is "Top_Design_Thing.vf".
+WARNING:Xst:653 - Signal <dummy> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <NOR9_MXILINX_Top_Design_Thing> synthesized.
+
+
+Synthesizing Unit <FJKC_MXILINX_Top_Design_Thing>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <FJKC_MXILINX_Top_Design_Thing> synthesized.
+
+
+Synthesizing Unit <CD4CE_MXILINX_Top_Design_Thing_1>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <CD4CE_MXILINX_Top_Design_Thing_1> synthesized.
+
+
+Synthesizing Unit <CD4CE_MXILINX_Top_Design_Thing_2>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <CD4CE_MXILINX_Top_Design_Thing_2> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Top_Design_Thing_2>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <M2_1_MXILINX_Top_Design_Thing_2> synthesized.
+
+
+Synthesizing Unit <M2_1B1_MXILINX_Top_Design_Thing_2>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <M2_1B1_MXILINX_Top_Design_Thing_2> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Top_Design_Thing_3>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <M2_1_MXILINX_Top_Design_Thing_3> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Top_Design_Thing_4>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <M2_1_MXILINX_Top_Design_Thing_4> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Top_Design_Thing_5>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <M2_1_MXILINX_Top_Design_Thing_5> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Top_Design_Thing_6>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <M2_1_MXILINX_Top_Design_Thing_6> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Top_Design_Thing_7>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <M2_1_MXILINX_Top_Design_Thing_7> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Top_Design_Thing_8>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <M2_1_MXILINX_Top_Design_Thing_8> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_Top_Design_Thing_1>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <FTCLEX_MXILINX_Top_Design_Thing_1> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_Top_Design_Thing_2>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <FTCLEX_MXILINX_Top_Design_Thing_2> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_Top_Design_Thing_1>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <M4_1E_MXILINX_Top_Design_Thing_1> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_Top_Design_Thing_2>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <M4_1E_MXILINX_Top_Design_Thing_2> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_Top_Design_Thing_3>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <M4_1E_MXILINX_Top_Design_Thing_3> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_Top_Design_Thing_4>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <M4_1E_MXILINX_Top_Design_Thing_4> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_Top_Design_Thing_5>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <M4_1E_MXILINX_Top_Design_Thing_5> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_Top_Design_Thing_6>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <M4_1E_MXILINX_Top_Design_Thing_6> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_Top_Design_Thing_7>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <M4_1E_MXILINX_Top_Design_Thing_7> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_Top_Design_Thing_8>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <M4_1E_MXILINX_Top_Design_Thing_8> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_Top_Design_Thing_9>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <M4_1E_MXILINX_Top_Design_Thing_9> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_Top_Design_Thing_10>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <M4_1E_MXILINX_Top_Design_Thing_10> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_Top_Design_Thing_3>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <FTCLEX_MXILINX_Top_Design_Thing_3> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_Top_Design_Thing_4>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <FTCLEX_MXILINX_Top_Design_Thing_4> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_Top_Design_Thing_5>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <FTCLEX_MXILINX_Top_Design_Thing_5> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_Top_Design_Thing_6>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <FTCLEX_MXILINX_Top_Design_Thing_6> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_Top_Design_Thing_7>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <FTCLEX_MXILINX_Top_Design_Thing_7> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_Top_Design_Thing_8>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <FTCLEX_MXILINX_Top_Design_Thing_8> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_Top_Design_Thing_9>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <FTCLEX_MXILINX_Top_Design_Thing_9> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_Top_Design_Thing_10>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <FTCLEX_MXILINX_Top_Design_Thing_10> synthesized.
+
+
+Synthesizing Unit <password_MUSER_Top_Design_Thing>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <password_MUSER_Top_Design_Thing> synthesized.
+
+
+Synthesizing Unit <CB2CLED_MXILINX_Top_Design_Thing_1>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <CB2CLED_MXILINX_Top_Design_Thing_1> synthesized.
+
+
+Synthesizing Unit <CB2CLED_MXILINX_Top_Design_Thing_2>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <CB2CLED_MXILINX_Top_Design_Thing_2> synthesized.
+
+
+Synthesizing Unit <CB8CLED_MXILINX_Top_Design_Thing>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <CB8CLED_MXILINX_Top_Design_Thing> synthesized.
+
+
+Synthesizing Unit <MODE_SELECT_MUSER_Top_Design_Thing>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <MODE_SELECT_MUSER_Top_Design_Thing> synthesized.
+
+
+Synthesizing Unit <MODE_3_MUSER_Top_Design_Thing>.
+    Related source file is "Top_Design_Thing.vf".
+Unit <MODE_3_MUSER_Top_Design_Thing> synthesized.
+
+
+Synthesizing Unit <mode1_MUSER_Top_Design_Thing>.
+    Related source file is "Top_Design_Thing.vf".
+WARNING:Xst:653 - Signal <XLXI_CO<7:4>> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
+WARNING:Xst:646 - Signal <OT<35:8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <CT<17:4>> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000.
+Unit <mode1_MUSER_Top_Design_Thing> synthesized.
+
+
+Synthesizing Unit <Top_Design_Thing>.
+    Related source file is "Top_Design_Thing.vf".
+WARNING:Xst:646 - Signal <XLXN_362<7>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <Top_Design_Thing> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 8x58-bit ROM                                          : 1
+# Adders/Subtractors                                   : 5
+ 4-bit adder                                           : 5
+# Counters                                             : 4
+ 12-bit up counter                                     : 3
+ 25-bit up counter                                     : 1
+# Registers                                            : 132
+ 1-bit register                                        : 130
+ 4-bit register                                        : 1
+ 6-bit register                                        : 1
+# Comparators                                          : 5
+ 5-bit comparator greater                              : 5
+# Multiplexers                                         : 40
+ 1-bit 8-to-1 multiplexer                              : 39
+ 8-bit 32-to-1 multiplexer                             : 1
+# Xors                                                 : 2
+ 1-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1426 - The value init of the FF/Latch init hinder the constant cleaning in the block lcd0.
+   You should achieve better results by setting this init to 0.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 8x58-bit ROM                                          : 1
+# Adders/Subtractors                                   : 5
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 4
+# Counters                                             : 4
+ 12-bit up counter                                     : 3
+ 25-bit up counter                                     : 1
+# Registers                                            : 179
+ Flip-Flops                                            : 179
+# Comparators                                          : 5
+ 5-bit comparator greater                              : 5
+# Multiplexers                                         : 40
+ 1-bit 8-to-1 multiplexer                              : 39
+ 8-bit 32-to-1 multiplexer                             : 1
+# Xors                                                 : 2
+ 1-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch init hinder the constant cleaning in the block lcd.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1710 - FF/Latch <OutString_0> (without init value) has a constant value of 0 in block <OUTPUT_LCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <OutString_106> (without init value) has a constant value of 1 in block <OUTPUT_LCD>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:1901 - Instance XLXI_190 in unit mode1_MUSER_Top_Design_Thing of type MULT18X18 has been replaced by MULT18X18SIO
+INFO:Xst:2261 - The FF/Latch <OutString_124> in Unit <OUTPUT_LCD> is equivalent to the following FF/Latch, which will be removed : <OutString_227> 
+
+Optimizing unit <Top_Design_Thing> ...
+
+Optimizing unit <clock> ...
+
+Optimizing unit <binbcd7> ...
+
+Optimizing unit <lcd> ...
+
+Optimizing unit <volume_control_MUSER_Top_Design_Thing> ...
+
+Optimizing unit <mute_control_MUSER_Top_Design_Thing> ...
+
+Optimizing unit <D2_4E_MXILINX_Top_Design_Thing> ...
+
+Optimizing unit <M2_1_MXILINX_Top_Design_Thing_1> ...
+
+Optimizing unit <M2_1B1_MXILINX_Top_Design_Thing_1> ...
+
+Optimizing unit <M2_1_MXILINX_Top_Design_Thing_9> ...
+
+Optimizing unit <COMP2_MXILINX_Top_Design_Thing> ...
+
+Optimizing unit <M2_1E_MXILINX_Top_Design_Thing_1> ...
+
+Optimizing unit <M2_1E_MXILINX_Top_Design_Thing_2> ...
+
+Optimizing unit <ADD8_MXILINX_Top_Design_Thing> ...
+
+Optimizing unit <AND9_MXILINX_Top_Design_Thing> ...
+
+Optimizing unit <NOR9_MXILINX_Top_Design_Thing> ...
+
+Optimizing unit <FJKC_MXILINX_Top_Design_Thing> ...
+
+Optimizing unit <CD4CE_MXILINX_Top_Design_Thing_1> ...
+
+Optimizing unit <CD4CE_MXILINX_Top_Design_Thing_2> ...
+
+Optimizing unit <M2_1_MXILINX_Top_Design_Thing_2> ...
+
+Optimizing unit <M2_1B1_MXILINX_Top_Design_Thing_2> ...
+
+Optimizing unit <M2_1_MXILINX_Top_Design_Thing_3> ...
+
+Optimizing unit <M2_1_MXILINX_Top_Design_Thing_4> ...
+
+Optimizing unit <M2_1_MXILINX_Top_Design_Thing_5> ...
+
+Optimizing unit <M2_1_MXILINX_Top_Design_Thing_6> ...
+
+Optimizing unit <M2_1_MXILINX_Top_Design_Thing_7> ...
+
+Optimizing unit <M2_1_MXILINX_Top_Design_Thing_8> ...
+
+Optimizing unit <OUTPUT_LCD> ...
+
+Optimizing unit <FTCLEX_MXILINX_Top_Design_Thing_1> ...
+
+Optimizing unit <FTCLEX_MXILINX_Top_Design_Thing_2> ...
+
+Optimizing unit <M4_1E_MXILINX_Top_Design_Thing_1> ...
+
+Optimizing unit <M4_1E_MXILINX_Top_Design_Thing_2> ...
+
+Optimizing unit <M4_1E_MXILINX_Top_Design_Thing_3> ...
+
+Optimizing unit <M4_1E_MXILINX_Top_Design_Thing_4> ...
+
+Optimizing unit <M4_1E_MXILINX_Top_Design_Thing_5> ...
+
+Optimizing unit <M4_1E_MXILINX_Top_Design_Thing_6> ...
+
+Optimizing unit <M4_1E_MXILINX_Top_Design_Thing_7> ...
+
+Optimizing unit <M4_1E_MXILINX_Top_Design_Thing_8> ...
+
+Optimizing unit <M4_1E_MXILINX_Top_Design_Thing_9> ...
+
+Optimizing unit <M4_1E_MXILINX_Top_Design_Thing_10> ...
+
+Optimizing unit <FTCLEX_MXILINX_Top_Design_Thing_3> ...
+
+Optimizing unit <FTCLEX_MXILINX_Top_Design_Thing_4> ...
+
+Optimizing unit <FTCLEX_MXILINX_Top_Design_Thing_5> ...
+
+Optimizing unit <FTCLEX_MXILINX_Top_Design_Thing_6> ...
+
+Optimizing unit <FTCLEX_MXILINX_Top_Design_Thing_7> ...
+
+Optimizing unit <FTCLEX_MXILINX_Top_Design_Thing_8> ...
+
+Optimizing unit <FTCLEX_MXILINX_Top_Design_Thing_9> ...
+
+Optimizing unit <FTCLEX_MXILINX_Top_Design_Thing_10> ...
+
+Optimizing unit <password_MUSER_Top_Design_Thing> ...
+
+Optimizing unit <CB2CLED_MXILINX_Top_Design_Thing_1> ...
+
+Optimizing unit <CB2CLED_MXILINX_Top_Design_Thing_2> ...
+
+Optimizing unit <CB8CLED_MXILINX_Top_Design_Thing> ...
+
+Optimizing unit <MODE_SELECT_MUSER_Top_Design_Thing> ...
+
+Optimizing unit <MODE_3_MUSER_Top_Design_Thing> ...
+
+Optimizing unit <mode1_MUSER_Top_Design_Thing> ...
+WARNING:Xst:2677 - Node <XLXI_49/cnt_2K_11> of sequential type is unconnected in block <Top_Design_Thing>.
+WARNING:Xst:2677 - Node <XLXI_49/cnt_2K_10> of sequential type is unconnected in block <Top_Design_Thing>.
+WARNING:Xst:2677 - Node <XLXI_49/cnt_2K_9> of sequential type is unconnected in block <Top_Design_Thing>.
+WARNING:Xst:2677 - Node <XLXI_49/cnt_2K_8> of sequential type is unconnected in block <Top_Design_Thing>.
+WARNING:Xst:2677 - Node <XLXI_49/cnt_2K_7> of sequential type is unconnected in block <Top_Design_Thing>.
+WARNING:Xst:2677 - Node <XLXI_49/cnt_2K_6> of sequential type is unconnected in block <Top_Design_Thing>.
+WARNING:Xst:2677 - Node <XLXI_49/cnt_2K_5> of sequential type is unconnected in block <Top_Design_Thing>.
+WARNING:Xst:2677 - Node <XLXI_49/cnt_2K_4> of sequential type is unconnected in block <Top_Design_Thing>.
+WARNING:Xst:2677 - Node <XLXI_49/cnt_2K_3> of sequential type is unconnected in block <Top_Design_Thing>.
+WARNING:Xst:2677 - Node <XLXI_49/cnt_2K_2> of sequential type is unconnected in block <Top_Design_Thing>.
+WARNING:Xst:2677 - Node <XLXI_49/cnt_2K_1> of sequential type is unconnected in block <Top_Design_Thing>.
+WARNING:Xst:2677 - Node <XLXI_49/cnt_2K_0> of sequential type is unconnected in block <Top_Design_Thing>.
+WARNING:Xst:2677 - Node <XLXI_49/clk_2K_temp> of sequential type is unconnected in block <Top_Design_Thing>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Top_Design_Thing, actual ratio is 5.
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_111/XLXI_272/I0> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_111/XLXI_272/I1> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_111/XLXI_272/I2> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_111/XLXI_272/I3> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_111/XLXI_272/I4> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_111/XLXI_272/I5> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_111/XLXI_272/I6> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_111/XLXI_272/I7> may hinder timing optimization.
+   You may achieve better results by removing this property
+
+Final Macro Processing ...
+
+Processing Unit <Top_Design_Thing> :
+	Found 2-bit shift register for signal <XLXI_50/XLXI_1/Q0>.
+	Found 2-bit shift register for signal <XLXI_50/XLXI_2/Q0>.
+	Found 2-bit shift register for signal <XLXI_50/XLXI_3/Q0>.
+	Found 2-bit shift register for signal <XLXI_50/XLXI_15/Q0>.
+	Found 2-bit shift register for signal <XLXI_111/XLXI_738/Q0>.
+Unit <Top_Design_Thing> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 214
+ Flip-Flops                                            : 214
+# Shift Registers                                      : 5
+ 2-bit shift register                                  : 5
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Top_Design_Thing.ngr
+Top Level Output File Name         : Top_Design_Thing
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 23
+
+Cell Usage :
+# BELS                             : 886
+#      AND2                        : 66
+#      AND2B1                      : 37
+#      AND2B2                      : 6
+#      AND3                        : 26
+#      AND3B1                      : 24
+#      AND3B2                      : 5
+#      AND3B3                      : 1
+#      AND4                        : 4
+#      AND4B1                      : 2
+#      AND4B2                      : 2
+#      AND4B3                      : 1
+#      AND4B4                      : 1
+#      AND5                        : 1
+#      AND5B4                      : 1
+#      BUF                         : 1
+#      GND                         : 4
+#      INV                         : 28
+#      LUT1                        : 46
+#      LUT2                        : 29
+#      LUT3                        : 151
+#      LUT4                        : 141
+#      MUXCY                       : 47
+#      MUXCY_D                     : 1
+#      MUXCY_L                     : 6
+#      MUXF5                       : 80
+#      MUXF6                       : 11
+#      MUXF7                       : 2
+#      OR2                         : 65
+#      OR3                         : 3
+#      OR4                         : 3
+#      VCC                         : 4
+#      XNOR2                       : 2
+#      XOR2                        : 28
+#      XORCY                       : 57
+# FlipFlops/Latches                : 219
+#      FD                          : 28
+#      FDC                         : 115
+#      FDCE                        : 22
+#      FDE                         : 2
+#      FDP                         : 10
+#      FDPE                        : 3
+#      FDR                         : 26
+#      FDRE                        : 9
+#      FDS                         : 4
+# Shift Registers                  : 5
+#      SRL16                       : 5
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 22
+#      IBUF                        : 7
+#      OBUF                        : 15
+# MULTs                            : 1
+#      MULT18X18SIO                : 1
+# Logical                          : 5
+#      NAND2                       : 1
+#      NAND3B1                     : 1
+#      NOR2                        : 1
+#      NOR3                        : 1
+#      NOR4B2                      : 1
+# Others                           : 14
+#      FMAP                        : 14
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      200  out of   4656     4%  
+ Number of Slice Flip Flops:            219  out of   9312     2%  
+ Number of 4 input LUTs:                400  out of   9312     4%  
+    Number used as logic:               395
+    Number used as Shift registers:       5
+ Number of IOs:                          23
+ Number of bonded IOBs:                  23  out of    232     9%  
+ Number of MULT18X18SIOs:                 1  out of     20     5%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)   | Load  |
+-----------------------------------+-------------------------+-------+
+XLXI_49/clk_100_temp1              | BUFG                    | 59    |
+XLXI_49/clk_100k                   | NONE(XLXI_49/cnt_100_11)| 13    |
+MCLK                               | BUFGP                   | 152   |
+-----------------------------------+-------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-------------------------------------------+-------------------------------------+-------+
+Control Signal                             | Buffer(FF name)                     | Load  |
+-------------------------------------------+-------------------------------------+-------+
+RESET(XLXI_105:O)                          | NONE(XLXI_111/XLXI_664/I_Q0/I_36_35)| 110   |
+RST_2                                      | IBUF                                | 26    |
+XLXI_111/XLXN_1242(XLXI_111/XLXI_57:O)     | NONE(XLXI_111/XLXI_665/I_Q0)        | 8     |
+XLXI_106/XLXN_5(XLXI_106/XLXI_3:O)         | NONE(XLXI_106/XLXI_7/I_Q0/I_36_35)  | 2     |
+XLXI_76/XLXN_5(XLXI_76/XLXI_4:O)           | NONE(XLXI_76/XLXI_1/I_Q0/I_36_35)   | 2     |
+XLXI_111/XLXN_1991(XLXI_111/XLXI_738/SP1:O)| NONE(XLXI_111/XLXI_663/I_36_32)     | 1     |
+XLXI_76/XLXN_43(XLXI_76/XLXI_21:O)         | NONE(XLXI_76/XLXI_22)               | 1     |
+-------------------------------------------+-------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 31.116ns (Maximum Frequency: 32.138MHz)
+   Minimum input arrival time before clock: 5.596ns
+   Maximum output required time after clock: 6.497ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_49/clk_100_temp1'
+  Clock period: 31.116ns (frequency: 32.138MHz)
+  Total number of paths / destination ports: 5394 / 96
+-------------------------------------------------------------------------
+Delay:               15.558ns (Levels of Logic = 15)
+  Source:            XLXI_50/XLXI_15/Q2 (FF)
+  Destination:       XLXI_111/XLXI_664/I_Q5/I_36_35 (FF)
+  Source Clock:      XLXI_49/clk_100_temp1 rising
+  Destination Clock: XLXI_49/clk_100_temp1 falling
+
+  Data Path: XLXI_50/XLXI_15/Q2 to XLXI_111/XLXI_664/I_Q5/I_36_35
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.591   0.595  XLXI_50/XLXI_15/Q2 (XLXI_50/XLXI_15/Q2)
+     LUT3:I0->O            3   0.704   0.531  XLXI_50/XLXI_15/SP1 (XLXI_50/XLXN_31)
+     OR2:I1->O            12   0.704   0.961  XLXI_50/XLXI_12 (BUT_0)
+     NOR4B2:I3->O         18   0.704   1.068  XLXI_111/XLXI_756 (XLXI_111/M1up)
+     begin scope: 'XLXI_111/XLXI_664'
+     begin scope: 'I_T4'
+     AND2B1:I0->O          1   0.704   0.420  I_36_7 (M0)
+     OR2:I1->O             9   0.704   0.820  I_36_8 (O)
+     end scope: 'I_T4'
+     AND4:I3->O            1   0.704   0.420  I_36_33 (T7_UP)
+     begin scope: 'I_T7'
+     AND2:I0->O            1   0.704   0.420  I_36_9 (M1)
+     OR2:I0->O             1   0.704   0.420  I_36_8 (O)
+     end scope: 'I_T7'
+     begin scope: 'I_Q7'
+     XOR2:I0->O            1   0.704   0.420  I_36_32 (TQ)
+     begin scope: 'I_36_30'
+     AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
+     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
+     end scope: 'I_36_30'
+     FDCE:D                    0.308          I_36_35
+    ----------------------------------------
+    Total                     15.558ns (8.643ns logic, 6.915ns route)
+                                       (55.6% logic, 44.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_49/clk_100k'
+  Clock period: 5.323ns (frequency: 187.864MHz)
+  Total number of paths / destination ports: 235 / 14
+-------------------------------------------------------------------------
+Delay:               5.323ns (Levels of Logic = 13)
+  Source:            XLXI_49/cnt_100_1 (FF)
+  Destination:       XLXI_49/cnt_100_11 (FF)
+  Source Clock:      XLXI_49/clk_100k rising
+  Destination Clock: XLXI_49/clk_100k rising
+
+  Data Path: XLXI_49/cnt_100_1 to XLXI_49/cnt_100_11
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.591   0.622  XLXI_49/cnt_100_1 (XLXI_49/cnt_100_1)
+     LUT1:I0->O            1   0.704   0.000  XLXI_49/Mcount_cnt_100_cy<1>_rt (XLXI_49/Mcount_cnt_100_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  XLXI_49/Mcount_cnt_100_cy<1> (XLXI_49/Mcount_cnt_100_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_49/Mcount_cnt_100_cy<2> (XLXI_49/Mcount_cnt_100_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_49/Mcount_cnt_100_cy<3> (XLXI_49/Mcount_cnt_100_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_49/Mcount_cnt_100_cy<4> (XLXI_49/Mcount_cnt_100_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_49/Mcount_cnt_100_cy<5> (XLXI_49/Mcount_cnt_100_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_49/Mcount_cnt_100_cy<6> (XLXI_49/Mcount_cnt_100_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_49/Mcount_cnt_100_cy<7> (XLXI_49/Mcount_cnt_100_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_49/Mcount_cnt_100_cy<8> (XLXI_49/Mcount_cnt_100_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_49/Mcount_cnt_100_cy<9> (XLXI_49/Mcount_cnt_100_cy<9>)
+     MUXCY:CI->O           0   0.059   0.000  XLXI_49/Mcount_cnt_100_cy<10> (XLXI_49/Mcount_cnt_100_cy<10>)
+     XORCY:CI->O           1   0.804   0.595  XLXI_49/Mcount_cnt_100_xor<11> (XLXI_49/Result<11>1)
+     LUT4:I0->O            1   0.704   0.000  XLXI_49/Mcount_cnt_100_eqn_111 (XLXI_49/Mcount_cnt_100_eqn_11)
+     FDC:D                     0.308          XLXI_49/cnt_100_11
+    ----------------------------------------
+    Total                      5.323ns (4.106ns logic, 1.217ns route)
+                                       (77.1% logic, 22.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'MCLK'
+  Clock period: 8.957ns (frequency: 111.642MHz)
+  Total number of paths / destination ports: 1552 / 84
+-------------------------------------------------------------------------
+Delay:               8.957ns (Levels of Logic = 8)
+  Source:            XLXI_80/lcd0/count_14 (FF)
+  Destination:       XLXI_80/lcd0/lcd_state_2 (FF)
+  Source Clock:      MCLK rising
+  Destination Clock: MCLK rising
+
+  Data Path: XLXI_80/lcd0/count_14 to XLXI_80/lcd0/lcd_state_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             89   0.591   1.455  XLXI_80/lcd0/count_14 (XLXI_80/lcd0/count_14)
+     LUT3:I0->O            1   0.704   0.000  XLXI_80/Mmux_char_mem_bus_15 (XLXI_80/Mmux_char_mem_bus_15)
+     MUXF5:I0->O           1   0.321   0.499  XLXI_80/Mmux_char_mem_bus_13_f5 (XLXI_80/Mmux_char_mem_bus_13_f5)
+     LUT2:I1->O            1   0.704   0.000  XLXI_80/lcd0/lcd_state_mux0001<3>722 (XLXI_80/lcd0/lcd_state_mux0001<3>722)
+     MUXF5:I0->O           2   0.321   0.482  XLXI_80/lcd0/lcd_state_mux0001<3>72_f5 (XLXI_80/lcd0/lcd_state_mux0001<3>72)
+     LUT3:I2->O            1   0.704   0.000  XLXI_80/lcd0/lcd_state_mux0001<3>1062 (XLXI_80/lcd0/lcd_state_mux0001<3>1062)
+     MUXF5:I0->O           1   0.321   0.499  XLXI_80/lcd0/lcd_state_mux0001<3>106_f5 (XLXI_80/lcd0/lcd_state_mux0001<3>106)
+     LUT4:I1->O            1   0.704   0.000  XLXI_80/lcd0/lcd_state_mux0001<3>1381 (XLXI_80/lcd0/lcd_state_mux0001<3>1381)
+     MUXF5:I1->O           1   0.321   0.420  XLXI_80/lcd0/lcd_state_mux0001<3>138_f5 (XLXI_80/lcd0/lcd_state_mux0001<3>138)
+     FDS:S                     0.911          XLXI_80/lcd0/lcd_state_2
+    ----------------------------------------
+    Total                      8.957ns (5.602ns logic, 3.355ns route)
+                                       (62.5% logic, 37.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_49/clk_100_temp1'
+  Total number of paths / destination ports: 17 / 15
+-------------------------------------------------------------------------
+Offset:              5.596ns (Levels of Logic = 5)
+  Source:            SW_2 (PAD)
+  Destination:       XLXI_111/XLXI_663/I_36_32 (FF)
+  Destination Clock: XLXI_49/clk_100_temp1 falling
+
+  Data Path: SW_2 to XLXI_111/XLXI_663/I_36_32
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.218   0.587  SW_2_IBUF (SW_2_IBUF)
+     OR2:I0->O             3   0.704   0.531  XLXI_111/XLXI_22 (XLXI_111/XLXN_1826)
+     begin scope: 'XLXI_111/XLXI_663'
+     AND3B2:I0->O          1   0.704   0.420  I_36_37 (A0)
+     OR3:I2->O             1   0.704   0.420  I_36_41 (AD)
+     FDC:D                     0.308          I_36_32
+    ----------------------------------------
+    Total                      5.596ns (3.638ns logic, 1.958ns route)
+                                       (65.0% logic, 35.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'MCLK'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              4.394ns (Levels of Logic = 1)
+  Source:            XLXI_80/lcd0/lcd_rw (FF)
+  Destination:       LCD_RW (PAD)
+  Source Clock:      MCLK rising
+
+  Data Path: XLXI_80/lcd0/lcd_rw to LCD_RW
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.591   0.531  XLXI_80/lcd0/lcd_rw (XLXI_80/lcd0/lcd_rw)
+     OBUF:I->O                 3.272          LCD_RW_OBUF (LCD_RW)
+    ----------------------------------------
+    Total                      4.394ns (3.863ns logic, 0.531ns route)
+                                       (87.9% logic, 12.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_49/clk_100_temp1'
+  Total number of paths / destination ports: 16 / 8
+-------------------------------------------------------------------------
+Offset:              6.497ns (Levels of Logic = 2)
+  Source:            XLXI_98/XLXI_35 (FF)
+  Destination:       Out_Thing<1> (PAD)
+  Source Clock:      XLXI_49/clk_100_temp1 falling
+
+  Data Path: XLXI_98/XLXI_35 to Out_Thing<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            28   0.591   1.261  XLXI_98/XLXI_35 (XLXN_313)
+     AND2B1:I0->O          6   0.704   0.669  XLXI_98/XLXI_7 (Out_Thing_1_OBUF)
+     OBUF:I->O                 3.272          Out_Thing_1_OBUF (Out_Thing<1>)
+    ----------------------------------------
+    Total                      6.497ns (4.567ns logic, 1.930ns route)
+                                       (70.3% logic, 29.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.26 secs
+ 
+--> 
+
+Total memory usage is 4553988 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   33 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../../Users/ECE/Desktop/Project_common/clk.vhd -prj Jerry -o clock.spl -module clock -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w clock.spl C:/jerry/Jerry/clock.sym 

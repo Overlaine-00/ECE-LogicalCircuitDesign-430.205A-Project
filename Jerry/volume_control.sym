@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="volume_control">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2020-7-27T8:27:31</timestamp>
+    <pin polarity="Input" x="0" y="-480" name="clock" />
+    <pin polarity="Input" x="0" y="-368" name="RST" />
+    <pin polarity="Input" x="0" y="-256" name="pulse" />
+    <pin polarity="Input" x="0" y="-32" name="BT_OUT_0" />
+    <pin polarity="Input" x="0" y="144" name="BT_OUT_1" />
+    <pin polarity="Output" x="384" y="32" name="Volume(7:0)" />
+    <pin polarity="Input" x="0" y="256" name="MODE" />
+    <graph>
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="192" y="-520" type="symbol" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-480" type="pin clock" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-368" type="pin RST" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-256" type="pin pulse" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin BT_OUT_0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="144" type="pin BT_OUT_1" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="32" type="pin Volume(7:0)" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="256" type="pin MODE" />
+        <line x2="0" y1="256" y2="256" x1="64" />
+        <line x2="0" y1="144" y2="144" x1="64" />
+        <rect width="64" x="320" y="20" height="24" />
+        <line x2="384" y1="32" y2="32" x1="320" />
+        <line x2="0" y1="-480" y2="-480" x1="64" />
+        <line x2="0" y1="-368" y2="-368" x1="64" />
+        <line x2="0" y1="-256" y2="-256" x1="64" />
+        <line x2="0" y1="-32" y2="-32" x1="64" />
+        <rect width="256" x="64" y="-512" height="800" />
+    </graph>
+</symbol>

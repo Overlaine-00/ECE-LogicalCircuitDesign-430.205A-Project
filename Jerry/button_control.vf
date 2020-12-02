@@ -1,0 +1,69 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : button_control.vf
+// /___/   /\     Timestamp : 07/29/2020 15:12:51
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/ECE/Desktop/Jerry/button_control.vf -w C:/Users/ECE/Desktop/Jerry/button_control.sch
+//Design Name: button_control
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module button_control(BT_0, 
+                      BT_1, 
+                      BT_2, 
+                      BT_3, 
+                      clock, 
+                      button_out_0, 
+                      button_out_1, 
+                      button_recognized);
+
+    input BT_0;
+    input BT_1;
+    input BT_2;
+    input BT_3;
+    input clock;
+   output button_out_0;
+   output button_out_1;
+   output button_recognized;
+   
+   wire XLXN_31;
+   wire XLXN_32;
+   wire XLXN_33;
+   wire XLXN_34;
+   
+   pulser  XLXI_1 (.CLK(clock), 
+                  .Sin(BT_2), 
+                  .SP(XLXN_32));
+   pulser  XLXI_2 (.CLK(clock), 
+                  .Sin(BT_1), 
+                  .SP(XLXN_33));
+   pulser  XLXI_3 (.CLK(clock), 
+                  .Sin(BT_0), 
+                  .SP(XLXN_34));
+   OR2  XLXI_11 (.I0(XLXN_32), 
+                .I1(XLXN_31), 
+                .O(button_out_1));
+   OR2  XLXI_12 (.I0(XLXN_33), 
+                .I1(XLXN_31), 
+                .O(button_out_0));
+   pulser  XLXI_15 (.CLK(clock), 
+                   .Sin(BT_3), 
+                   .SP(XLXN_31));
+   OR4  XLXI_16 (.I0(XLXN_34), 
+                .I1(XLXN_33), 
+                .I2(XLXN_32), 
+                .I3(XLXN_31), 
+                .O(button_recognized));
+endmodule

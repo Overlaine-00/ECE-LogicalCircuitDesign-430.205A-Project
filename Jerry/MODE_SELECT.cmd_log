@@ -1,0 +1,8 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym MODE_SELECT C:/Users/ECE/Desktop/Jerry/MODE_SELECT.sch C:/Users/ECE/Desktop/Jerry/MODE_SELECT.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym MODE_SELECT C:/Users/ECE/Desktop/Jerry/MODE_SELECT.sch C:/Users/ECE/Desktop/Jerry/MODE_SELECT.sym 
+sch2hdl -intstyle ise -family spartan3e -verilog MODE_SELECT_drc.vf -w C:/Users/ECE/Desktop/Jerry/MODE_SELECT.sch 
+sch2sym -intstyle ise -family spartan3e -w -refsym MODE_SELECT C:/Users/ECE/Desktop/Jerry/MODE_SELECT.sch C:/Users/ECE/Desktop/Jerry/MODE_SELECT.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym MODE_SELECT C:/Users/ECE/Desktop/Jerry/MODE_SELECT.sch C:/Users/ECE/Desktop/Jerry/MODE_SELECT.sym 
+sch2hdl -intstyle ise -family spartan3e -verilog MODE_SELECT_drc.vf -w C:/Users/ECE/Desktop/Jerry/MODE_SELECT.sch 
+sch2sym -intstyle ise -family spartan3e -w -refsym MODE_SELECT C:/Users/ECE/Desktop/Jerry/MODE_SELECT.sch C:/Users/ECE/Desktop/Jerry/MODE_SELECT.sym 
+sch2hdl -intstyle ise -family spartan3e -verilog MODE_SELECT_drc.vf -w C:/Users/ECE/Desktop/Jerry/MODE_SELECT.sch 

@@ -1,0 +1,81 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : mute_control.vf
+// /___/   /\     Timestamp : 08/01/2020 15:59:39
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/ECE/Desktop/Jerry/mute_control.vf -w C:/Users/ECE/Desktop/Jerry/mute_control.sch
+//Design Name: mute_control
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module mute_control(BT_1, 
+                    CLOCK, 
+                    MODE, 
+                    PULSE, 
+                    RESET, 
+                    Volume, 
+                    MUTE, 
+                    Out_Vol);
+
+    input BT_1;
+    input CLOCK;
+    input MODE;
+    input PULSE;
+    input RESET;
+    input [7:0] Volume;
+   output MUTE;
+   output [7:0] Out_Vol;
+   
+   wire XLXN_48;
+   wire XLXN_52;
+   wire MUTE_DUMMY;
+   
+   assign MUTE = MUTE_DUMMY;
+   AND2B1  XLXI_1 (.I0(MUTE_DUMMY), 
+                  .I1(Volume[7]), 
+                  .O(Out_Vol[7]));
+   AND2B1  XLXI_2 (.I0(MUTE_DUMMY), 
+                  .I1(Volume[6]), 
+                  .O(Out_Vol[6]));
+   AND2B1  XLXI_3 (.I0(MUTE_DUMMY), 
+                  .I1(Volume[5]), 
+                  .O(Out_Vol[5]));
+   AND2B1  XLXI_4 (.I0(MUTE_DUMMY), 
+                  .I1(Volume[4]), 
+                  .O(Out_Vol[4]));
+   AND2B1  XLXI_5 (.I0(MUTE_DUMMY), 
+                  .I1(Volume[3]), 
+                  .O(Out_Vol[3]));
+   AND2B1  XLXI_6 (.I0(MUTE_DUMMY), 
+                  .I1(Volume[2]), 
+                  .O(Out_Vol[2]));
+   AND2B1  XLXI_7 (.I0(MUTE_DUMMY), 
+                  .I1(Volume[1]), 
+                  .O(Out_Vol[1]));
+   AND2B1  XLXI_8 (.I0(MUTE_DUMMY), 
+                  .I1(Volume[0]), 
+                  .O(Out_Vol[0]));
+   AND2B1  XLXI_33 (.I0(MUTE_DUMMY), 
+                   .I1(BT_1), 
+                   .O(XLXN_48));
+   AND2  XLXI_34 (.I0(MODE), 
+                 .I1(PULSE), 
+                 .O(XLXN_52));
+   FDRE #( .INIT(1'b0) ) XLXI_35 (.C(CLOCK), 
+                 .CE(XLXN_52), 
+                 .D(XLXN_48), 
+                 .R(RESET), 
+                 .Q(MUTE_DUMMY));
+endmodule

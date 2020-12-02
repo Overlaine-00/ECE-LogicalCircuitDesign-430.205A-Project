@@ -1,0 +1,17 @@
+[Inputs]
+MCLK
+RESET
+MUTE
+=MODE[2:0]=
+=CHANNEL[7:0]=
+=VOLUME[7:0]=
+=PASSWORD[1:0]=
+[Outputs]
+LCD_E
+LCD_RS
+LCD_RW
+=LCD_Data[11:8]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel OUTPUT_LCD
+

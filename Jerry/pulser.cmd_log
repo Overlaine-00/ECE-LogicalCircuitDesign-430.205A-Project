@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../../Users/ECE/Desktop/Project_common/pulser.vhd -prj Jerry -o pulser.spl -module pulser -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e pulser.spl C:/jerry/Jerry/pulser.sym 

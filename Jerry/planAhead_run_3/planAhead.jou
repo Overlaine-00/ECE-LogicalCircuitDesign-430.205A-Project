@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Mon Aug 03 00:30:00 2020
+# Process ID: 1192
+# Log file: C:/Users/ECE/Desktop/Jerry/planAhead_run_3/planAhead.log
+# Journal file: C:/Users/ECE/Desktop/Jerry/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/ECE/Desktop/Jerry/pa.fromNetlist.tcl
+startgroup
+set_property package_pin M15 [get_ports {LCD_DATA[11]}]
+endgroup
+startgroup
+set_property package_pin L14 [get_ports SW_2]
+endgroup

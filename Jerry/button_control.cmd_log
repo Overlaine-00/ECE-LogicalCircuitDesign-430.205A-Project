@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -refsym button_control C:/jerry/Jerry/button_control.sch C:/jerry/Jerry/button_control.sym 

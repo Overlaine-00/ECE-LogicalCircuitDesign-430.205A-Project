@@ -1,0 +1,3 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym MODE_3 C:/Users/ECE/Desktop/Jerry/MODE_3.sch C:/Users/ECE/Desktop/Jerry/MODE_3.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym MODE_3 C:/Users/ECE/Desktop/Jerry/MODE_3.sch C:/Users/ECE/Desktop/Jerry/MODE_3.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym MODE_3 C:/Users/ECE/Desktop/Jerry/MODE_3.sch C:/Users/ECE/Desktop/Jerry/MODE_3.sym 

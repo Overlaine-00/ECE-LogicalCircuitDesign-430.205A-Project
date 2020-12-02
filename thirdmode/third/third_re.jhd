@@ -1,0 +1,17 @@
+MODULE third_re
+	SUBMODULE bitcollector
+		INSTANCE XLXI_1
+	SUBMODULE bitcollector
+		INSTANCE XLXI_2
+	SUBMODULE bitcollector
+		INSTANCE XLXI_3
+	SUBMODULE bitcollector
+		INSTANCE XLXI_4
+	SUBMODULE bitcollector
+		INSTANCE XLXI_5
+	SUBMODULE bitcollector
+		INSTANCE XLXI_6
+	SUBMODULE bitcollector
+		INSTANCE XLXI_7
+	SUBMODULE bitcollector
+		INSTANCE XLXI_8

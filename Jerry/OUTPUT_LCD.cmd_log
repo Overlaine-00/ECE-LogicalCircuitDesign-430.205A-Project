@@ -1,0 +1,6 @@
+vhdtdtfi -lib work C:/Users/ECE/Desktop/Project_common/OUTPUT_LOGIC.v -lang verilog -prj Jerry -o OUTPUT_LCD.spl -module OUTPUT_LCD -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e OUTPUT_LCD.spl C:/jerry/Jerry/OUTPUT_LCD.sym 
+vhdtdtfi -lib work C:/Users/ECE/Desktop/Project_common/OUTPUT_LOGIC.v -lang verilog -prj Jerry -o OUTPUT_LCD.spl -module OUTPUT_LCD -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w OUTPUT_LCD.spl C:/Users/ECE/Desktop/Jerry/OUTPUT_LCD.sym 
+vhdtdtfi -lib work C:/Users/ECE/Desktop/Project_common/OUTPUT_LOGIC.v -lang verilog -prj Jerry -o OUTPUT_LCD.spl -module OUTPUT_LCD -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w OUTPUT_LCD.spl C:/Users/ECE/Desktop/Jerry/OUTPUT_LCD.sym 

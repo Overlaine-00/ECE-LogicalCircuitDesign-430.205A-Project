@@ -1,0 +1,195 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : volume_control.vf
+// /___/   /\     Timestamp : 07/29/2020 15:12:50
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/ECE/Desktop/Jerry/volume_control.vf -w C:/Users/ECE/Desktop/Jerry/volume_control.sch
+//Design Name: volume_control
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module volume_control(BT_OUT_0, 
+                      BT_OUT_1, 
+                      clock, 
+                      MODE, 
+                      pulse, 
+                      RST, 
+                      Volume);
+
+    input BT_OUT_0;
+    input BT_OUT_1;
+    input clock;
+    input MODE;
+    input pulse;
+    input RST;
+   output [7:0] Volume;
+   
+   wire Enable;
+   wire XLXN_151;
+   wire XLXN_201;
+   wire XLXN_202;
+   wire XLXN_204;
+   wire XLXN_205;
+   wire XLXN_207;
+   wire XLXN_208;
+   wire XLXN_210;
+   wire XLXN_212;
+   wire XLXN_216;
+   wire XLXN_217;
+   wire XLXN_220;
+   wire XLXN_221;
+   wire XLXN_222;
+   wire XLXN_223;
+   wire XLXN_224;
+   wire XLXN_225;
+   wire XLXN_231;
+   wire XLXN_262;
+   wire XLXN_271;
+   wire XLXN_275;
+   wire XLXN_292;
+   wire XLXN_297;
+   wire XLXN_299;
+   wire XLXN_300;
+   wire XLXN_302;
+   wire XLXN_303;
+   wire XLXN99911;
+   wire [7:0] Volume_DUMMY;
+   
+   assign Volume[7:0] = Volume_DUMMY[7:0];
+   VCC  XLXI_150 (.P(XLXN_151));
+   AND2  XLXI_154 (.I0(XLXN_151), 
+                  .I1(XLXN99911), 
+                  .O(XLXN_201));
+   AND2  XLXI_155 (.I0(XLXN_262), 
+                  .I1(Volume_DUMMY[6]), 
+                  .O(XLXN_202));
+   AND2  XLXI_158 (.I0(Volume_DUMMY[7]), 
+                  .I1(XLXN99911), 
+                  .O(XLXN_204));
+   AND2  XLXI_159 (.I0(XLXN_262), 
+                  .I1(Volume_DUMMY[5]), 
+                  .O(XLXN_205));
+   AND2  XLXI_160 (.I0(Volume_DUMMY[6]), 
+                  .I1(XLXN99911), 
+                  .O(XLXN_207));
+   AND2  XLXI_161 (.I0(XLXN_262), 
+                  .I1(Volume_DUMMY[4]), 
+                  .O(XLXN_208));
+   AND2  XLXI_162 (.I0(Volume_DUMMY[5]), 
+                  .I1(XLXN99911), 
+                  .O(XLXN_210));
+   AND2  XLXI_163 (.I0(XLXN_262), 
+                  .I1(Volume_DUMMY[3]), 
+                  .O(XLXN_212));
+   OR2  XLXI_177 (.I0(XLXN_201), 
+                 .I1(XLXN_202), 
+                 .O(XLXN_271));
+   OR2  XLXI_178 (.I0(XLXN_204), 
+                 .I1(XLXN_205), 
+                 .O(XLXN_275));
+   OR2  XLXI_179 (.I0(XLXN_207), 
+                 .I1(XLXN_208), 
+                 .O(XLXN_292));
+   OR2  XLXI_180 (.I0(XLXN_210), 
+                 .I1(XLXN_212), 
+                 .O(XLXN_297));
+   AND2  XLXI_183 (.I0(XLXN_262), 
+                  .I1(XLXN_231), 
+                  .O(XLXN_216));
+   AND2  XLXI_184 (.I0(Volume_DUMMY[1]), 
+                  .I1(XLXN99911), 
+                  .O(XLXN_217));
+   AND2  XLXI_185 (.I0(XLXN_262), 
+                  .I1(Volume_DUMMY[0]), 
+                  .O(XLXN_220));
+   AND2  XLXI_186 (.I0(Volume_DUMMY[2]), 
+                  .I1(XLXN99911), 
+                  .O(XLXN_221));
+   AND2  XLXI_187 (.I0(XLXN_262), 
+                  .I1(Volume_DUMMY[1]), 
+                  .O(XLXN_222));
+   AND2  XLXI_188 (.I0(Volume_DUMMY[3]), 
+                  .I1(XLXN99911), 
+                  .O(XLXN_223));
+   AND2  XLXI_189 (.I0(XLXN_262), 
+                  .I1(Volume_DUMMY[2]), 
+                  .O(XLXN_224));
+   AND2  XLXI_190 (.I0(Volume_DUMMY[4]), 
+                  .I1(XLXN99911), 
+                  .O(XLXN_225));
+   OR2  XLXI_191 (.I0(XLXN_217), 
+                 .I1(XLXN_216), 
+                 .O(XLXN_303));
+   OR2  XLXI_192 (.I0(XLXN_221), 
+                 .I1(XLXN_220), 
+                 .O(XLXN_302));
+   OR2  XLXI_193 (.I0(XLXN_223), 
+                 .I1(XLXN_222), 
+                 .O(XLXN_300));
+   OR2  XLXI_194 (.I0(XLXN_225), 
+                 .I1(XLXN_224), 
+                 .O(XLXN_299));
+   GND  XLXI_196 (.G(XLXN_231));
+   AND2B1  XLXI_200 (.I0(BT_OUT_1), 
+                    .I1(BT_OUT_0), 
+                    .O(XLXN_262));
+   NOR2  XLXI_202 (.I0(BT_OUT_1), 
+                  .I1(BT_OUT_0), 
+                  .O(XLXN99911));
+   FDPE #( .INIT(1'b1) ) XLXI_204 (.C(clock), 
+                  .CE(Enable), 
+                  .D(XLXN_271), 
+                  .PRE(RST), 
+                  .Q(Volume_DUMMY[7]));
+   FDPE #( .INIT(1'b1) ) XLXI_206 (.C(clock), 
+                  .CE(Enable), 
+                  .D(XLXN_275), 
+                  .PRE(RST), 
+                  .Q(Volume_DUMMY[6]));
+   FDPE #( .INIT(1'b1) ) XLXI_207 (.C(clock), 
+                  .CE(Enable), 
+                  .D(XLXN_292), 
+                  .PRE(RST), 
+                  .Q(Volume_DUMMY[5]));
+   FDRE #( .INIT(1'b0) ) XLXI_208 (.C(clock), 
+                  .CE(Enable), 
+                  .D(XLXN_297), 
+                  .R(RST), 
+                  .Q(Volume_DUMMY[4]));
+   FDRE #( .INIT(1'b0) ) XLXI_209 (.C(clock), 
+                  .CE(Enable), 
+                  .D(XLXN_299), 
+                  .R(RST), 
+                  .Q(Volume_DUMMY[3]));
+   FDRE #( .INIT(1'b0) ) XLXI_210 (.C(clock), 
+                  .CE(Enable), 
+                  .D(XLXN_300), 
+                  .R(RST), 
+                  .Q(Volume_DUMMY[2]));
+   FDRE #( .INIT(1'b0) ) XLXI_211 (.C(clock), 
+                  .CE(Enable), 
+                  .D(XLXN_302), 
+                  .R(RST), 
+                  .Q(Volume_DUMMY[1]));
+   FDRE #( .INIT(1'b0) ) XLXI_212 (.C(clock), 
+                  .CE(Enable), 
+                  .D(XLXN_303), 
+                  .R(RST), 
+                  .Q(Volume_DUMMY[0]));
+   AND3B1  XLXI_215 (.I0(BT_OUT_1), 
+                    .I1(MODE), 
+                    .I2(pulse), 
+                    .O(Enable));
+endmodule

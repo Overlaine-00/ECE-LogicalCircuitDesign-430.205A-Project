@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/jerry/Jerry/button_control_isim_beh.exe" -prj "C:/jerry/Jerry/button_control_beh.prj" "work.button_control" "work.glbl" 

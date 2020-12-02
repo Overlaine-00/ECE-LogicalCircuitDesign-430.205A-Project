@@ -1,0 +1,18 @@
+V3 9
+FL C:/Users/ECE/Desktop/Project_common/binbcd7.vhd 2020/07/22.10:55:04 P.20131013
+EN work/binbcd7 1596296753 FL C:/Users/ECE/Desktop/Project_common/binbcd7.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/binbcd7/Behavioral 1596296754 \
+      FL C:/Users/ECE/Desktop/Project_common/binbcd7.vhd EN work/binbcd7 1596296753
+FL C:/Users/ECE/Desktop/Project_common/clk.vhd 2020/07/20.22:08:28 P.20131013
+EN work/clock 1596296755 FL C:/Users/ECE/Desktop/Project_common/clk.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/clock/Behavioral 1596296756 \
+      FL C:/Users/ECE/Desktop/Project_common/clk.vhd EN work/clock 1596296755
+FL C:/Users/ECE/Desktop/Project_common/pulser.vhd 2020/07/22.10:44:20 P.20131013
+EN work/pulser 1596296757 FL C:/Users/ECE/Desktop/Project_common/pulser.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/pulser/Behavioral 1596296758 \
+      FL C:/Users/ECE/Desktop/Project_common/pulser.vhd EN work/pulser 1596296757

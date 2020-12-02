@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../../Users/ECE/Desktop/Project_common/binbcd7.vhd -prj Jerry -o binbcd7.spl -module binbcd7 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e binbcd7.spl C:/jerry/Jerry/binbcd7.sym 
