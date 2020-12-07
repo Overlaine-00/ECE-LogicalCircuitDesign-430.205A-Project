@@ -1,8 +1,15 @@
 # EE-Logical-Design-Project
 
 This is final project of SNUEE logical design lecture (430.201A).  
- ## Infos
-- Objective : remort controller containing 4 mode
+
+## Objective
+Remort controller containing 4 mode
+ - Mode 1 : channel control  
+ - Mode 2 : sound control  
+ - Mode 3 : prefered channel choice  
+ - Mode 4 : lock mode
+
+## Infos
 - Program :  Xilinx Spartan 3 program  
 - FPGA board : Spartan 3, 3A, 3E
 
