@@ -1,4 +1,4 @@
-# Final Project : Traffic Control System
+# Final Project : Remote Control Circuit
 This is final project of SNUEE logical design lecture (430.201A).  
 
 ## Objective
