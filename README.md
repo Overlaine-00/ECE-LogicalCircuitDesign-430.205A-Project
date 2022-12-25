@@ -1,5 +1,4 @@
-# EE-Logical-Design-Project
-
+# Final Project : Traffic Control System
 This is final project of SNUEE logical design lecture (430.201A).  
 
 ## Objective
